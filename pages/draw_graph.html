@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Graphique (tracé)</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/draw_graph.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Tracer un graphique</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <a class="btn equipment-btn" href="#modal-equipment">Matériel</a>
+
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-axis">Construire les axes</a></li>
+                            <li><a class="btn step-btn" href="#modal-points">Placer les points</a></li>
+                            <li><a class="btn step-btn" href="#modal-line">Tracer la courbe</a></li>
+                            <li><a class="btn step-btn" href="#modal-title">Ajouter un titre</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple de consigne -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <p>Tracer le graphique montrant le nombre de fourmis près d'une source de nourriture au cours du temps.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de tableau de valeurs</h2>
+                <div>
+                    <table class="instruction-table">
+                        <tr>
+                            <td>Temps (min)</td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td>10</td>
+                            <td>15</td>
+                            <td>20</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Nombre de fourmis</td>
+                            <td>0</td>
+                            <td>8</td>
+                            <td>44</td>
+                            <td>68</td>
+                            <td>72</td>
+                            <td>52</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de graphique</h2>
+                <div class="script">
+                    <h3 class="script__title script__title-center">
+                        Évolution du nombre de fourmis près d'une source de nourriture au cours du temps
+                    </h3>
+                    <figure class="script__pencil">
+                        <img src="../images/draw_graph.svg" loading="lazy" alt="">
+                        <figcaption class="labels">
+                            <span class="label" data-part="ants">nombre de fourmis</span>
+                            <span class="label" data-part="time">temps (min)</span>
+                            <span class="label" data-part="0">0</span>
+                            <span class="label" data-part="y20">20</span>
+                            <span class="label" data-part="y40">40</span>
+                            <span class="label" data-part="y60">60</span>
+                            <span class="label" data-part="y80">80</span>
+                            <span class="label" data-part="x5">5</span>
+                            <span class="label" data-part="x10">10</span>
+                            <span class="label" data-part="x15">15</span>
+                            <span class="label" data-part="x20">20</span>
+                            <span class="label" data-part="x25">25</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale matériel -->
+        <section class="modal modal__equipment" id="modal-equipment">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Matériel</h2>
+            <ul class="modal__list">
+                <li>Crayon à papier taillé.</li>
+                <li>Gomme, taille-crayon.</li>
+                <li>Règle.</li>
+                <li>Feutres fins ou stylos.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-axis">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Construire les axes</h2>
+            <ul class="modal__list">
+                <li>Abscisses (→) : 1<sup>e</sup> ligne du tableau.</li>
+                <li>Ordonnées (↑) : 2<sup>e</sup> ligne du tableau.</li>
+                <li>Flèches au bout.</li>
+                <li>Grandeurs mesurées + unités.</li>
+                <li>Graduations régulières et optimisées.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-points">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Placer les points</h2>
+            <ul class="modal__list">
+                <li>À partir des valeurs du tableau.</li>
+                <li>Petites croix.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-line">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Tracer la courbe</h2>
+            <ul class="modal__list">
+                <li>Si ≈ alignés, relier à la règle.</li>
+                <li>Sinon, relier à main levée.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-title">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Ajouter un titre</h2>
+            <ul class="modal__list">
+                <li>Sujet du graphique.</li>
+                <li>Mis en valeur.</li>
+            </ul>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai bien tracé mon graphique si…</h2>
+            <ul class="modal__list">
+                <li>J'ai réalisé un travail soigné.</li>
+                <li>J'ai tracé deux axes fléchés, comportant un titre et une unité de mesure.</li>
+                <li>J'ai choisi des échelles régulières, et optimisées.</li>
+                <li>J'ai placé les points correctement, avec des croix discrètes.</li>
+                <li>J'ai relié les points à main levée (si non alignés) ou à la règle (si alignés).</li>
+                <li>J'ai proposé un titre précis et je l'ai mis en valeur.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Graphique (lecture)</title>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/read_graph.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Lire un graphique</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-axis">Lire les axes</a></li>
+                            <li><a class="btn step-btn" href="#modal-data">Repérer les données importantes</a></li>
+                            <li><a class="btn step-btn" href="#modal-description">Décrire l'évolution</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple de consigne -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <p>Décrire l'évolution de la population d'une colonie de fourmis en un an.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="wrapper">
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de graphique</h2>
+                <div>
+                    <h3 class="title">Évolution du nombre de fourmis dans une colonie dans une année</h3>
+                    <figure>
+                        <img id="read-graph-img" loading="lazy" src="../images/read_graph.svg" alt="">
+                        <figcaption class="labels">
+                            <span class="label" data-part="ants">nombre de fourmis</span>
+                            <span class="label" data-part="time">temps<br>(mois)</span>
+                            <span class="label" data-part="workers">ouvrières</span>
+                            <span class="label" data-part="reproducers">reproducteurs</span>
+                            <span class="label" data-part="0">0</span>
+                            <span class="label" data-part="10000">10 000</span>
+                            <span class="label" data-part="20000">20 000</span>
+                            <span class="label" data-part="30000">30 000</span>
+                            <span class="label" data-part="january">J</span>
+                            <span class="label" data-part="february">F</span>
+                            <span class="label" data-part="march">M</span>
+                            <span class="label" data-part="april">A</span>
+                            <span class="label" data-part="may">M</span>
+                            <span class="label" data-part="june">J</span>
+                            <span class="label" data-part="july">J</span>
+                            <span class="label" data-part="august">A</span>
+                            <span class="label" data-part="september">S</span>
+                            <span class="label" data-part="october">O</span>
+                            <span class="label" data-part="november">N</span>
+                            <span class="label" data-part="december">D</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de réponse</h2>
+                <div class="script script__pen">
+                    <p>
+                        Sur le graphique, on voit que la population d'ouvrières est d'environ 8&nbsp;000
+                        pendant la majeure partie de l'hiver. Puis, de mars à fin juillet, elle augmente pour atteindre environ
+                        30&nbsp;000 ouvrières. Cette population diminue ensuite progressivement jusque mi-décembre pour retourner
+                        à la valeur hivernale d'environ 8&nbsp;000 individus.
+                    </p>
+                    <p>
+                        Les sexués sont absents de la colonie de mi-septembre à mi-avril environ. En avril-mai,
+                        leur population augmente lentement, puis très rapidement pendant le mois de juin. Elle atteint alors
+                        8&nbsp;000 individus environ. Puis elle diminue rapidement courant juillet, puis plus lentement en août.
+                        Elle redevient nulle dans le mois de septembre.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-axis">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Lire les axes</h2>
+            <ul class="modal__list">
+                <li>Abscisses (→) : paramètre fixé.</li>
+                <li>Ordonnées (↑) : grandeur mesurée.</li>
+                <li>Attention aux unités.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-data">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Repérer les données importantes</h2>
+            <ul class="modal__list">
+                <li>Valeurs extrêmes (mini/maxi).</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-description">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Décrire l'évolution</h2>
+            <ul class="modal__list">
+                <li>Tendances (augmentation, diminution, stagnation).</li>
+                <li>Comparaison entre courbes si possible.</li>
+                <li>Éviter "monter", "descendre".</li>
+            </ul>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai bien lu le graphique si…</h2>
+            <ul class="modal__list">
+                <li>J'ai identifié le type de graphique et les unités.</li>
+                <li>J'ai repéré les valeurs extrêmes.</li>
+                <li>J'ai repéré les tendances.</li>
+                <li>J'ai utilisé un vocabulaire précis dans ma réponse.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

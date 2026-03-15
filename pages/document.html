@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/document.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Lire un document</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-introduce">Présenter le document</a></li>
+                            <li><a class="btn step-btn" href="#modal-description">Décrire les informations</a></li>
+                            <li><a class="btn step-btn" href="#modal-interpretation">Interpréter le document</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <p>Expliquer comment les fourmis se repèrent pour aller chercher de la nourriture à l'aide du document.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de document</h2>
+                <div>
+                    <h3 class="title">Les capacités d'orientation des fourmis</h3>
+                    <figure>
+                        <img src="../images/document.svg" loading="lazy" alt="">
+
+                        <figcaption class="labels">
+                            <span class="label" data-part="food">nourriture</span>
+                            <span class="label" data-part="path">trajet des fourmis</span>
+                            <span class="label" data-part="paper">papier</span>
+                            <span class="label" data-part="nest">nid</span>
+                            <span class="label" data-part="turn">on tourne<br>le papier</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de réponse</h2>
+                <div class="script script__pen">
+                    <p class="prod-text">Le schéma montre le résultat d'une expérience sur la façon dont les fourmis se repèrent pour aller chercher de la nourriture.</p>
+                    <p class="prod-text">On voit que les fourmis suivent une piste qui relie le nid à la source de nourriture. Quand on déplace la piste, elles continuent à la suivre  même si elles ne parviennent plus à destination.</p>
+                    <p class="prod-text">On peut donc conclure que ce n'est pas grâce à la vue que les fourmis repèrent la nourriture ou leur chemin.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-introduce">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Présenter le document</h2>
+            <ul class="modal__list">
+                <li>Le type de document.</li>
+                <li>De quoi parle le document.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-description">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Décrire les informations</h2>
+            <ul class="modal__list">
+                <li>Ce qu'on voit / lit.</li>
+                <li>Selon le cas : citer les chiffres / citer le texte / calculer / comparer…</li>
+                <li>Exemples de mots : Je vois / Je lis / J'observe / Je remarque / Il y a / Augmenter / Diminuer / Stagner…</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-interpretation">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Interpréter le document</h2>
+            <ul class="modal__list">
+                <li>Ce qu'on déduit.</li>
+                <li>Mettre en relation.</li>
+                <li>Expliquer ce qu'on a observé.</li>
+                <li>Comparer (si possible).</li>
+                <li>Exemple de mots : On en déduit que / Donc / Parce que / Conclusion…</li>
+            </ul>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai bien lu le document si…</h2>
+            <ul class="modal__list">
+                <li>J'ai rapidement présenté le document.</li>
+                <li>J'ai identifié les informations utiles.</li>
+                <li>J'ai fait des calculs ou des comparaisons (quand c'est possible).</li>
+                <li>J'ai établi des relations entre les informations et mes connaissances.</li>
+                <li>J'ai expliqué ce que je vois dans le document.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

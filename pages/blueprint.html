@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Schéma</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/blueprint.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Réaliser un schéma</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <a href="#modal-equipment" class="btn equipment-btn" id="equipment-btn">Matériel</a>
+
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-symbols">Choisir les symboles</a></li>
+                            <li><a class="btn step-btn" href="#modal-captions">Légender</a></li>
+                            <li><a class="btn step-btn" href="#modal-title">Ajouter un titre</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <p>Schématiser une fourmilière artificielle pour une petite colonie de fourmis.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de schéma</h2>
+                <div class="script">
+                    <h3 class="script__title script__title-center">Un jeune élevage de fourmis</h3>
+                    <figure class="script__pencil">
+                        <img src="../images/blueprint.png" loading="lazy" alt="">
+                        <figcaption class="labels">
+                            <span class="label" data-part="water">eau</span>
+                            <span class="label" data-part="cotton">coton tassé</span>
+                            <span class="label" data-part="anti-escape">anti-évasion (talc + alcool)</span>
+                            <span class="label" data-part="food">nourriture</span>
+                            <span class="label" data-part="worker">ouvrière</span>
+                            <span class="label" data-part="queen">reine</span>
+                            <span class="label" data-part="eggs">œufs et larves</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale matériel -->
+        <section class="modal modal__equipment" id="modal-equipment">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Matériel</h2>
+            <ul class="modal__list">
+                <li>Crayon à papier taillé.</li>
+                <li>Gomme, taille-crayon.</li>
+                <li>Règle, compas.</li>
+                <li>Couleurs possibles.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-symbols">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Choisir les symboles</h2>
+            <ul class="modal__list">
+                <li>Formes simples, non réalistes.</li>
+                <li>Symboles normés (verrerie).</li>
+                <li>Représentation soignée.</li>
+                <li>Pas d'éléments inutiles.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-captions">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Légender</h2>
+            <ul class="modal__list">
+                <li>Au crayon.</li>
+                <li>Traits à la règle, non croisés.</li>
+                <li>Pas les symboles normés (tubes à essais).</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-title">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Ajouter un titre</h2>
+            <ul class="modal__list">
+                <li>Sujet du schéma.</li>
+                <li>Mis en valeur.</li>
+            </ul>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai bien réalisé mon schéma si…</h2>
+            <ul class="modal__list">
+                <li>J'ai réalisé un travail soigné.</li>
+                <li>J'ai choisi des symboles simples, sans ajout inutile, sans détail superflu.</li>
+                <li>J'ai utilisé des symboles normés lorsque c'est possible.</li>
+                <li>J'ai tracé des traits de légende à la règle, qui ne se croisent pas.</li>
+                <li>J'ai légendé mon schéma avec précision.</li>
+                <li>J'ai proposé un titre précis et je l'ai mis en valeur.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

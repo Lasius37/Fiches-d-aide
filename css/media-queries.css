@@ -1,0 +1,48 @@
+@media (max-width: 1024px) {
+    :root {
+        --script-size: 24px;
+    }
+}
+
+@media (max-width: 900px) {
+    :root {
+        --script-size: 28px;
+    }
+
+    main {
+        display: block;
+        flex: initial;
+        margin: 0 1em;
+    }
+
+    .menu-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .instructions, .productions {
+        width: 100%;
+        height: auto;
+        gap: 1.5em;
+    }
+
+    .columns {
+        display: block;
+    }
+
+    #tools {
+        width: 100%;
+        border: none;
+    }
+
+    .mindmap-caption-title {
+        border-width: 1px;
+    }
+}
+
+
+@media (max-width: 640px) {
+    :root {
+        --script-size: 14px;
+    }
+}

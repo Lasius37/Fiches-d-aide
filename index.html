@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Fiches d'aides en SVT</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/constants.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+    <link rel="stylesheet" href="./css/specifics/index.css">
+    <script src="./script/script.js" defer></script>
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER
+    **************************************************************************************************************** -->
+    <header class="index-header">
+        <h1>Les fiches méthode</h1>
+    </header>
+
+    <main id="index-main">
+        <!-- ***********************************************************************************************************
+             SEARCH
+        ************************************************************************************************************ -->
+        <form id="search" action="">
+            <div>
+                <label for="index">
+                    <i class="bi bi-search"></i>
+                </label>
+                <input name="index" id="index" placeholder="Rechercher : mot-clé" autofocus>
+            </div>
+            <div>
+                <label for="problems">
+                    <i class="bi bi-question-lg"></i>
+                </label>
+                <select name="problems" id="problems" required>
+                    <option value="" disabled selected hidden>Quel est votre problème ?</option>
+                </select>
+            </div>
+        </form>
+        <!-- ***********************************************************************************************************
+             NAV
+        ************************************************************************************************************ -->
+        <nav class="main-menu">
+            <ul class="main-menu__list"></ul>
+        </nav>
+    </main>
+</body>
+</html>

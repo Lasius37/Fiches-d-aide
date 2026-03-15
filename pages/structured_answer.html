@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Réponse structurée</title>
+    <title>Exercice</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/structured_answer.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Rédiger une réponse structurée</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-read">Lire et comprendre la question</a></li>
+                            <li><a class="btn step-btn" href="#modal-structurate">Organiser la réponse</a></li>
+                            <li><a class="btn step-btn" href="#modal-write">Rédiger la réponse</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple de consigne -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <p>Expliquer comment une colonie de fourmis s'organise pour nourrir les larves.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de réponse</h2>
+                <div>
+                    <p>[Introduction]
+                        <span class="script script__pen">
+                            Dans une colonie de fourmis, le nourrissage des larves résulte d’une organisation
+                            précise et collective.
+                        </span>
+                    </p>
+                    <p>[Développement]
+                        <span class="script script__pen">
+                            <span class="structured_answer__connector">D'abord</span>, après leur éclosion, les jeunes
+                            ouvrières deviennent <span class="structured_answer__keyword">nourrices</span> : elles
+                            restent dans le nid, nettoient et surveillent les larves et distribuent la nourriture
+                            liquide régurgitée. <span class="structured_answer__connector">Puis</span> en vieillissant,
+                            certaines s’occupent du tri, du nettoyage et du stockage des aliments rapportés.
+                            <span class="structured_answer__connector">Enfin</span>, les ouvrières âgées quittent le
+                            nid pour récolter graines, insectes ou miellat. À leur retour, la nourriture est transmise
+                            d’ouvrière en ouvrière par <span class="structured_answer__keyword">trophallaxie</span>.
+                            Les nourrices la redistribuent <span class="structured_answer__connector">alors</span>
+                            selon les besoins des larves, en veillant à leur croissance et à la protection du
+                            <span class="structured_answer__keyword">couvain</span>.
+                        </span>
+                    </p>
+                    <p>[Conclusion]
+                        <span class="script script__pen">
+                            <span class="structured_answer__connector">Ainsi</span>, la nourriture est d’abord
+                            collectée, puis stockée, et enfin distribuée par des individus d’âge différent. Cette
+                            chaîne ordonnée, de l’extérieur vers l’intérieur de la colonie, assure sa survie durable.
+                        </span>
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-read">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Lire et comprendre la question</h2>
+            <ul class="modal__list">
+                <li>Mots-clés.</li>
+                <li>Données présentes dans les documents.</li>
+                <li>Type de réponse attendue (explication, justification, comparaison…).</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-structurate">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Organiser la réponse</h2>
+            <ul class="modal__list">
+                <li>Introduction courte.</li>
+                <li>Relations entre les éléments :
+                    <ul class="modal__sub-list">
+                        <li>causes → conséquences</li>
+                        <li>condition → effet</li>
+                        <li>plus/moins → modification</li>
+                    </ul>
+                </li>
+                <li>Ordre logique des idées.</li>
+                <li>Conclusion : réponse claire à la question.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-write">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Rédiger la réponse</h2>
+            <ul class="modal__list">
+                <li>Phrases courtes</li>
+                <li>Texte ponctué.</li>
+                <li>Une idée par phrase.</li>
+                <li>Vocabulaire précis.</li>
+                <li>Connecteurs logiques (donc, mais, alors que…).</li>
+            </ul>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai rédigé une réponse structurée si…</h2>
+            <ul class="modal__list">
+                <li>J'ai compris la question et identifié les mots-clés.</li>
+                <li>J'ai produit un texte structuré (introduction, développement, conclusion).</li>
+                <li>J'ai rédigé des phrases courtes, bien ponctuées, avec un vocabulaire précis.</li>
+                <li>J'ai enchaîné mes idées dans un ordre cohérent.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

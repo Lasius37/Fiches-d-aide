@@ -1,0 +1,16 @@
+.lesson dl, .lesson dt, .lesson dd {
+    margin: 0;
+    padding: 0;
+}
+
+.lesson dt, .lesson dd {
+    display: inline;
+}
+
+.lesson dt {
+    color: var(--green);
+}
+
+.lesson h3 {
+    margin: 0.5rem 0;
+}

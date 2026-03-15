@@ -1,0 +1,45 @@
+.wrapper__element-example ol li {
+    list-style: decimal inside;
+}
+
+.wrapper__sub {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+figure {
+    position: relative;
+}
+
+.units-operation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.units-frac {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.units-frac__fracbar {
+    border: 1px solid;
+    width: 100%;
+}
+
+figure figcaption span {
+    position: absolute;
+}
+
+span[data-part="line1"] {bottom: 26%; right: 57%}
+span[data-part="line2"] {bottom: 68%; left: 60%}
+span[data-part="line3"] {top: 50%; left: 60%}
+
+span[data-part="caption1"] {bottom: 35%; right: 79%}
+span[data-part="caption2"] {bottom: 107%; left: 80%}
+span[data-part="caption3"] {top: 35%; left: 80%}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Leçon</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/lesson.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER: retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Apprendre une leçon</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN: sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <ol class="step-btns">
+                        <li class="btn step-btn"><a href="#modal-essential">Repérer l'essentiel</a></li>
+                        <li class="btn step-btn"><a href="#modal-understand">Comprendre la leçon</a></li>
+                        <li class="btn step-btn"><a href="#modal-memorize">Mémoriser activement</a></li>
+                        <li class="btn step-btn"><a href="#modal-check">Vérifier ses connaissances</a></li>
+                    </ol>
+
+                    <a href="#modal-autoeval" class="btn autoeval-btn">Autoévaluation</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de leçon à apprendre</h2>
+                <div class="lesson">
+                    <h3>Partie "Cours" : les bilans ("À savoir")</h3>
+                    <div class="script">
+                        <h3 class="script__title">La communication chez les fourmis.</h3>
+                        <p class="script__pen">
+                            Les fourmis communiquent surtout grâce à des <span class="script__marker">phéromones</span>.
+                            Elles les déposent au sol pour :
+                        </p>
+                        <ul class="script__pen">
+                            <li>indiquer un chemin vers de la nourriture</li>
+                            <li>alerter d’un danger</li>
+                            <li>informer de la présence d’un espace à explorer.</li>
+                        </ul>
+                        <p class="script__pen">
+                            Chaque fourmi détecte les phéromones grâce à ses antennes. Quand une ouvrière trouve de la
+                            nourriture, elle retourne au nid en laissant une trace de phéromones qui sera suivie par
+                            les autres. Ainsi, plus la piste est utilisée, plus elle attire d’autres fourmis.
+                            Cette communication chimique permet à la colonie d’agir comme un groupe coordonné,
+                            sans chef, où chaque individu suit des règles simples menant à un comportement collectif
+                            efficace.
+                        </p>
+                    </div>
+                    <h3>Partie "À garder" : les définitions</h3>
+                    <dl class="script">
+                        <dt>phéromone :</dt>
+                        <dd class="script__pen">substance chimique qui permet aux individus d'une espèce de communiquer.</dd>
+                    </dl>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside>
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-essential">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Repérer l'essentiel</h2>
+            <ul class="modal__list">
+                <li>Première lecture complète.</li>
+                <li>Repérage : titre, mots-clés, définitions, schémas.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-understand">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Comprendre la leçon</h2>
+            <ul class="modal__list">
+                <li>Reformulation avec ses propres mots.</li>
+                <li>Vérification de la bonne compréhension.</li>
+                <li>En cas de problème : noter pour demander en classe.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-memorize">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Mémoriser activement</h2>
+            <ul class="modal__list">
+                <li>Plusieurs possibilités :
+                    <ul class="modal__sub-list">
+                        <li>lire plusieurs fois</li>
+                        <li>recopier</li>
+                        <li>enregistrer et écouter</li>
+                        <li>faire une fiche</li>
+                        <li>faire une carte mentale</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-check">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Vérifier ses connaissances</h2>
+            <ul class="modal__list">
+                <li>Plusieurs possibilités :
+                    <ul class="modal__sub-list">
+                        <li>cacher et réciter</li>
+                        <li>cacher et réécrire</li>
+                        <li>expliquer à l'oral / à l'écrit</li>
+                        <li>répondre à des questions</li>
+                        <li>se poser des questions</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai bien appris ma leçon si…</h2>
+            <ul class="modal__list">
+                <li>Je connais les titres et les définitions des mots-clés.</li>
+                <li>Je sais refaire les schémas sans modèle.</li>
+                <li>Je sais répondre à des questions courtes.</li>
+                <li>Je peux expliquer la leçon avec mes mots, sans regarder le classeur.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

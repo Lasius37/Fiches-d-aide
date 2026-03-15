@@ -1,0 +1,7 @@
+.diaporama-part {
+    text-decoration: underline;
+}
+
+.diaporama-keyword {
+    background-color: var(--yellow);
+}

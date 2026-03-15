@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Calculs (unités)</title>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/units.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1 class="header-item header-title">Calculer avec des unités</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-units">Identifier les données</a></li>
+                            <li><a class="btn step-btn" href="#modal-calculation">Utiliser la formule de calcul</a></li>
+                            <li><a class="btn step-btn" href="#modal-results">Vérifier le résultat</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple de donnée -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de donnée</h2>
+                <div>
+                    <p>Une fourmi de 3 mm parcourt 34 cm en 5 secondes.</p>
+                </div>
+            </article>
+
+            <!-- Exemple de consigne -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <ol>
+                        <li>Calculer la vitesse de la fourmi en cm/s.</li>
+                        <li>Calculer la vitesse de la fourmi en mm/s.</li>
+                    </ol>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper wrapper__sub">
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de calcul</h2>
+                <div class="script script__pen">
+                    <h3 class="script__title">Question 1 :</h3>
+                    <ul>
+                        <li>
+                            <span>J'utilise la formule&nbsp;:</span>
+                            <figure class="script__pencil">
+                                <div class="units-operation">
+                                    <span>v = </span>
+                                    <span class="units-frac">
+                                        <span class="units-frac__num">d</span>
+                                        <span class="units-frac__fracbar"></span>
+                                        <span class="units-frac__denom">t</span>
+                                    </span>
+                                </div>
+                                <figcaption>
+                                    <span data-part="line1">
+                                        <svg width="48" height="9" viewBox="0 0 44 9" color="contextColor" aria-label="Légende">
+                                            <line x1="2" y1="2" x2="40" y2="5" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+                                        </svg>
+                                    </span>
+                                    <span data-part="line2">
+                                        <svg width="44" height="24" viewBox="0 0 44 24" color="contextColor" aria-label="Légende">
+                                            <line x1="2" y1="20" x2="40" y2="2" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+                                        </svg>
+                                    </span>
+                                    <span data-part="line3">
+                                        <svg width="44" height="14" viewBox="0 0 44 14" color="contextColor" aria-label="Légende">
+                                            <line x1="2" y1="10" x2="40" y2="2" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+                                        </svg>
+                                    </span>
+                                    <span data-part="caption1">cm/s</span>
+                                    <span data-part="caption2">cm</span>
+                                    <span data-part="caption3">s</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <span>Je remplace les lettres par les valeurs&nbsp;:</span>
+                            <figure class="script__pencil">
+                                <div class="units-operation">
+                                    <span>v = </span>
+                                    <span class="units-frac">
+                                        <span class="units-frac__num">34</span>
+                                        <span class="units-frac__fracbar"></span>
+                                        <span class="units-frac__denom">5</span>
+                                    </span>
+                                    <span> = 6,8</span>
+                                </div>
+                            </figure>
+                        </li>
+                    </ul>
+                    <p>La fourmi se déplace à 6,8 cm/s.</p>
+                </div>
+            </article>
+
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de calcul</h2>
+                <div class="script script__pen">
+                    <h3 class="script script__title">Question 2 :</h3>
+                    <ul>
+                        <li>
+                            <span>J'utilise la formule&nbsp;:</span>
+                            <figure class="script__pencil">
+                                <div class="units-operation">
+                                    <span>v = </span>
+                                    <span class="units-frac">
+                                        <span class="units-frac__num">d</span>
+                                        <span class="units-frac__fracbar"></span>
+                                        <span class="units-frac__denom">t</span>
+                                    </span>
+                                </div>
+                                <figcaption>
+                                    <span data-part="line1">
+                                        <svg width="48" height="9" viewBox="0 0 44 9" color="contextColor" aria-label="Légende">
+                                            <line x1="2" y1="2" x2="40" y2="5" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+                                        </svg>
+                                    </span>
+                                    <span data-part="line2">
+                                        <svg width="44" height="24" viewBox="0 0 44 24" color="contextColor" aria-label="Légende">
+                                            <line x1="2" y1="20" x2="40" y2="2" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+                                        </svg>
+                                    </span>
+                                    <span data-part="line3">
+                                        <svg width="44" height="14" viewBox="0 0 44 14" color="contextColor" aria-label="Légende">
+                                            <line x1="2" y1="10" x2="40" y2="2" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+                                        </svg>
+                                    </span>
+                                    <span data-part="caption1">mm/s</span>
+                                    <span data-part="caption2">mm</span>
+                                    <span data-part="caption3">s</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <span>Je convertis 34 cm en mm&nbsp;:</span>
+                            <p class="script__pencil">34 cm  = 340 mm</p>
+                        </li>
+                        <li>Je remplace les lettres par les valeurs&nbsp;:<br>
+                            <figure class="script__pencil">
+                                <div class="units-operation">
+                                    <span>v = </span>
+                                    <span class="units-frac">
+                                        <span class="units-frac__num">340</span>
+                                        <span class="units-frac__fracbar"></span>
+                                        <span class="units-frac__denom">5</span>
+                                    </span>
+                                    <span> = 68</span>
+                                </div>
+                            </figure>
+                        </li>
+                    </ul>
+                    <p>La fourmi se déplace à 68 mm/s.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-units">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Identifier les données</h2>
+            <ul class="modal__list">
+                <li>Grandeurs.</li>
+                <li>Unités.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-calculation">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Le calcul</h2>
+            <ul class="modal__list">
+                <li>Bonne formule.</li>
+                <li>Symbole ↔ unité.</li>
+                <li>Conversion si besoin.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-results">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Le résultat</h2>
+            <ul class="modal__list">
+                <li>Réalisme du résultat.</li>
+                <li>Phrase réponse.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai bien calculé si…</h2>
+            <ul class="modal__list">
+                <li>J'ai utilisé des unités cohérentes du début à la fin.</li>
+                <li>J’ai utilisé la bonne formule de calcul.</li>
+                <li>J'ai bien converti les valeurs si nécessaire.</li>
+                <li>J'ai obtenu un résultat réaliste.</li>
+                <li>Je peux expliquer ma démarche sansa calculatrice.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

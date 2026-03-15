@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Pourcentages</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/percent.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Utiliser les pourcentages</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-use">Utiliser un pourcentage</a></li>
+                            <li><a class="btn step-btn" href="#modal-calculate">Calculer un pourcentage</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple de consigne -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <ol>
+                        <li>Calculer le nombre d'adultes dans la colonie.</li>
+                        <li>Calculer le pourcentage de mâles dans la colonie.</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- Exemple de données -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de données</h2>
+                <div>
+                    <ol>
+                        <li>
+                            Dans une colonie de 18&nbsp;000 fourmis, dont 1&nbsp;200 reproducteurs, on estime qu'il y
+                            a environ 65 % d'adultes.
+                        </li>
+                        <li>Dans une colonie de fourmis, on compte 5&nbsp;000 ouvrières, 800 mâles et 350 futures reines.</li>
+                    </ol>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper wrapper__sub">
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de calcul</h2>
+                <div class="script script__pen">
+                    <h3 class="script__title">Question 1</h3>
+                    <p>Je dois calculer 65 % de 18&nbsp;000.</p>
+                    <div class="percent-operation">
+                        <span>18&nbsp;000 × </span>
+                        <span class="percent-frac">
+                            <span class="percent-frac__num">65</span>
+                            <span class="percent-frac__fracbar"></span>
+                            <span class="percent-frac__denom">100</span>
+                        </span>
+                        <span> = 11&nbsp;700</span>
+                    </div>
+                    <p>Il y a 11&nbsp;700 adultes dans la colonie.</p>
+                </div>
+            </article>
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de calcul</h2>
+                <div class="script script__pen">
+                    <h3 class="script__title">Question 2</h3>
+                    <ul>
+                        <li>
+                            <span>Calcul de l'effectif total&nbsp;:</span>
+                            <div>5&nbsp;000 + 800 + 350 = 6&nbsp;150</div>
+                            <div>Il y a 6&nbsp;150 fourmis dans la colonie.</div>
+                        </li>
+                        <li>
+                            <span>Calcul du pourcentage de mâles&nbsp;:</span>
+                            <table>
+                                <tr>
+                                    <td class="percent__first-cell"></td>
+                                    <td>nombre</td>
+                                    <td>%</td>
+                                </tr>
+                                <tr>
+                                    <td>effectif</td>
+                                    <td>800</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>effectif total</td>
+                                    <td>6&nbsp;150</td>
+                                    <td>100</td>
+                                </tr>
+                            </table>
+                            <div class="percent-operation">
+                                <span>v = </span>
+                                <span class="percent-frac">
+                                    <span class="percent-frac__num">800 × 100</span>
+                                    <span class="percent-frac__fracbar"></span>
+                                    <span class="percent-frac__denom">6&nbsp;150</span>
+                                </span>
+                                <span> <span class="unknown-char">≈</span> 13</span>
+                            </div>
+                            <p>Il y a 13 % de mâles dans la colonie.</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-use">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Utiliser un pourcentage</h2>
+            <ul class="modal__list">
+                <li>Pourcentage à utiliser.</li>
+                <li>Total (trouver ou calculer).</li>
+                <li>Total × pourcentage.</li>
+                <li>Réalisme du résultat.</li>
+                <li>Phrase réponse.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-calculate">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Calculer un pourcentage</h2>
+            <ul class="modal__list">
+                <li>Valeur à utiliser.</li>
+                <li>Total (trouver ou calculer).</li>
+                <li>Tableau de proportionnalité (produit en croix) :
+                    <div>
+                        <table class="percent__table">
+                            <tr>
+                                <td class="percent__first-cell"></td>
+                                <td>nombre</td>
+                                <td>%</td>
+                            </tr>
+                            <tr>
+                                <td>effectif</td>
+                                <td>donnée</td>
+                                <td>résultat</td>
+                            </tr>
+                            <tr>
+                                <td>effectif total</td>
+                                <td>donnée</td>
+                                <td>100</td>
+                            </tr>
+                        </table>
+                    </div>
+                </li>
+                <li>Réalisme du résultat.</li>
+                <li>Phrase réponse.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai bien utilisé les pourcentages si…</h2>
+            <ul class="modal__list">
+                <li>J'ai bien identifié les valeurs à utiliser.</li>
+                <li>J’ai fait le bon calcul.</li>
+                <li>J'ai obtenu un résultat réaliste.</li>
+                <li>Je peux expliquer ma démarche sansa calculatrice.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

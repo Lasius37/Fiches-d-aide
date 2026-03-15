@@ -1,0 +1,55 @@
+#index-main {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+}
+
+.main-menu li {
+    width: 22em;
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    justify-content: center;
+    margin: 1.5em;
+}
+
+input, select {
+    border: 2px solid var(--black);
+    border-radius: var(--border-radius);
+    font-family: var(--std-font);
+    font-size: var(--std-size);
+    padding: 8px;
+}
+
+#search div {
+    display: flex;
+    vertical-align: center;
+    gap: 0.5em;
+}
+
+#search i {
+    font-size: var(--icon-size);
+}
+
+#problems {
+    color: #777;
+}
+
+#problems:valid {
+    color: black;
+}
+
+#problems optgroup {
+    color: black;
+}

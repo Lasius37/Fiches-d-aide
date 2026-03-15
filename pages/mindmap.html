@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Carte mentale</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/mindmap.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Réaliser une carte mentale</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <a href="#modal-equipment" class="btn equipment-btn" id="advices-btn">Conseils préparatoires (au brouillon)</a>
+
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-presentation">Soigner la présentation</a></li>
+                            <li><a class="btn step-btn" href="#modal-theme">Choisir le thème central</a></li>
+                            <li><a class="btn step-btn" href="#modal-elements">Organiser les idées</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple de consigne -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <p>
+                        <span class="homework-verb">Légender</span> le <span class="homework-keyword">schéma</span> d'une
+                        <span class="homework-keyword">fourmi</span> à l'aide du site
+                        <span class="homework-keyword">www.vikidia.org</span>.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de carte mentale</h2>
+                <figure class="prod-image">
+                    <img src="../images/mindmap.png" loading="lazy" alt="">
+                    <figcaption class="script">
+                        <span class="label mindmap__title" data-part="title">Les élevages<br>de fourmis</span>
+
+                        <div class="mindmap__blue">
+                            <span class="label mindmap__sub" data-part="breeding">conditions<br>d'élevage</span>
+                            <span class="label" data-part="temperature">température</span>
+                            <span class="label" data-part="moisture">humidité</span>
+                            <span class="label" data-part="food">alimentation</span>
+                            <span class="label" data-part="winter">diapause<br>hivernale</span>
+                        </div>
+
+                        <div class="mindmap__yellow">
+                            <span class="label mindmap__sub" data-part="lifecycle">cycle de vie</span>
+                            <span class="label" data-part="queen">reine</span>
+                            <span class="label" data-part="egg">œuf</span>
+                            <span class="label" data-part="larva">larve</span>
+                            <span class="label" data-part="pupa">pupe</span>
+                            <span class="label" data-part="gyne">future reine</span>
+                            <span class="label" data-part="male">mâle</span>
+                            <span class="label" data-part="worker">ouvrière</span>
+                        </div>
+
+                        <div class="mindmap__purple">
+                            <span class="label mindmap__sub" data-part="colony">colonie</span>
+                            <span class="label" data-part="mating">accouplement</span>
+                            <span class="label" data-part="foundation">fondation</span>
+                            <span class="label" data-part="growth">croissance</span>
+                            <span class="label" data-part="swarming">essaimage</span>
+                        </div>
+
+                        <div class="mindmap__brown">
+                            <span class="label mindmap__sub" data-part="anthill">fourmilière<br>artificielle</span>
+                            <span class="label" data-part="hunting">aire de chasse</span>
+                            <span class="label" data-part="nest">nid</span>
+                        </div>
+
+                        <div class="mindmap__green">
+                            <span class="label mindmap__sub" data-part="examples">exemples<br>d'espèces</span>
+                            <span class="label" data-part="messor">Messor<br>barbarus</span>
+                            <span class="label" data-part="tetramorium">Tetramorium<br>cæspitum</span>
+                            <span class="label" data-part="lasius">Lasius<br>niger</span>
+                        </div>
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale matériel -->
+        <section class="modal modal__equipment" id="modal-equipment">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Conseils préparatoires (au brouillon)</h2>
+            <ul class="modal__list">
+                <li>Trouver le thème central.</li>
+                <li>Lister les éléments à représenter.</li>
+                <li>Identifier les liens entre les éléments.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-presentation">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Soigner la présentation</h2>
+            <ul class="modal__list">
+                <li>Écriture horizontale.</li>
+                <li>Traits propres.</li>
+                <li>Photos, dessins, schémas…</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-theme">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Choisir le thème central</h2>
+            <ul class="modal__list">
+                <li>Sujet de la carte mentale.</li>
+                <li>Mis en valeur (couleur, taille, …).</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-elements">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Organiser les idées</h2>
+            <ul class="modal__list">
+                <li>Plusieurs niveaux hiérarchiques.</li>
+                <li>Éléments regroupés de façon cohérente.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai bien réalisé ma carte mentale si…</h2>
+            <ul class="modal__list">
+                <li>J'ai réalisé un travail soigné.</li>
+                <li>J'ai tracé les traits à la règle.</li>
+                <li>J'ai bien mis en évidence le thème central.</li>
+                <li>J'ai relié les éléments entre eux selon une logique et une hiérarchie.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

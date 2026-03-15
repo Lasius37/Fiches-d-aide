@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Sécurité</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/security.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Manipuler en sécurité</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-rules">Respecter les règles générales</a></li>
+                            <li><a class="btn step-btn" href="#modal-space">Organiser l'espace</a></li>
+                            <li><a class="btn step-btn" href="#modal-tools">Manipuler le matériel</a></li>
+                            <li><a class="btn step-btn" href="#modal-clean">Ranger et nettoyer</a></li>
+                         </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple de consigne -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <p>Tester si des substances peuvent perturber les pistes des fourmis.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Pictogramme -->
+        <section class="wrapper">
+
+            <!-- Pictogrammes -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Les pictogrammes de sécurité</h2>
+                <div>
+                    <table class="security-table">
+                        <tr>
+                            <td><img src="../images/explosive.png" loading="lazy" alt="" class="security-picto">
+                                <p>Ça explose</p>
+                            </td>
+                            <td><img src="../images/flamable.png" loading="lazy" alt="" class="security-picto">
+                                <p>Ça prend feu</p>
+                            </td>
+                            <td><img src="../images/comburant.png" loading="lazy" alt="" class="security-picto">
+                                <p>Ça fait brûler</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="../images/pressure.png" loading="lazy" alt="" class="security-picto">
+                                <p>Ça éclate fort</p>
+                            </td>
+                            <td><img src="../images/corrosive.png" loading="lazy" alt="" class="security-picto">
+                                <p>Ça ronge</p>
+                            </td>
+                            <td><img src="../images/toxic.png" loading="lazy" alt="" class="security-picto">
+                                <p>C'est toxique</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="../images/cancerogen.png" loading="lazy" alt="" class="security-picto">
+                                <p>Ça abîme le corps sur la durée</p>
+                            </td>
+                            <td><img src="../images/nocive.png" loading="lazy" alt="" class="security-picto">
+                                <p>Ça rend malade</p>
+                            </td>
+                            <td><img src="../images/environment.png" loading="lazy" alt="" class="security-picto">
+                                <p>C'est dangereux pour la nature</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+        
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-rules">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Respecter les règles générales</h2>
+            <ul class="modal-list">
+                <li><span class="warning">⚠ </span>Comportement adapté à la sécurité de tous :
+                    <ul class="modal__sub-list">
+                        <li><span class="warning">⚠ </span>ne pas courir</li>
+                        <li><span class="warning">⚠ </span>ne pas jouer</li>
+                        <li><span class="warning">⚠ </span>ne pas sentir ni goûter</li>
+                    </ul>
+                </li>
+                <li><span class="warning">⚠ </span>Pas de déplacement inutile.</li>
+                <li><span class="warning">⚠ </span>Cheveux attachés.</li>
+                <li><span class="warning">⚠ </span>Pas de manches amples ou d'écharpe.</li>
+            </ul>
+        </section>
+        
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-space">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Organiser l'espace</h2>
+            <ul class="modal__list">
+                <li><span class="warning">⚠ </span>Zone pour manipuler :
+                    <ul class="modal__sub-list">
+                        <li><span class="warning">⚠ </span>pas de document</li>
+                        <li><span class="warning">⚠ </span>espace dégagé</li>
+                    </ul>
+                </li>
+                <li>Zone pour écrire :
+                    <ul class="modal__sub-list">
+                        <li>documents utiles</li>
+                        <li>trousses</li>
+                    </ul>
+                </li>
+                <li>Dans le sac :
+                    <ul class="modal__sub-list">
+                        <li>classeurs</li>
+                        <li>matériel inutile</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-tools">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Manipuler le matériel</h2>
+            <ul class="modal__list">
+                <li>Lecture les consignes.</li>
+                <li><span class="warning">⚠ </span>Utilisation du matériel (pas de casse).</li>
+                <li><span class="warning">⚠ </span>Vigilance.</li>
+                <li><span class="warning">⚠ </span>Pictogrammes de sécurité.</li>
+            </ul>
+        </section>
+        
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-clean">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Ranger et nettoyer</h2>
+            <ul class="modal__list">
+                <li>Matériel électrique éteint.</li>
+                <li>Table de travail propre.</li>
+                <li>Vaisselle faite.</li>
+                <li>Déchets : poubelle indiquée.</li>
+            </ul>
+        </section>
+        
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : je respecte les conditions de sécurité si…</h2>
+            <ul class="modal__list">
+                <li>Je connais et j’applique les règles avant, pendant et après la manipulation.</li>
+                <li>J'ai organisé les différents espaces de travail.</li>
+                <li>J’utilise le matériel avec précaution, sans casse.</li>
+                <li>Je respecte les pictogrammes de sécurité.</li>
+                <li>Je ne mets personne en danger.</li>
+                <li>Mon espace de travail est propre et rangé à la fin de la manipulation.</li>
+                <li>Le matériel est éteint, correctement nettoyé et rangé.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

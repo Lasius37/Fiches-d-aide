@@ -1,0 +1,7 @@
+.structured_answer__keyword {
+    background-color: var(--yellow);
+}
+
+.structured_answer__connector {
+    text-decoration: underline;
+}

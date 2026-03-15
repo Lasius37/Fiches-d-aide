@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Diaporama</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/diaporama.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Réaliser un diaporama</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <a href="#modal-equipment" class="btn equipment-btn">Matériel</a>
+
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-infos">Organiser les informations</a></li>
+                            <li><a class="btn step-btn" href="#modal-diapos">Construire les diapos</a></li>
+                            <li><a class="btn step-btn" href="#modal-format">Mettre en forme les diapos</a></li>
+                            <li><a class="btn step-btn" href="#modal-dynamize">Dynamiser le contenu</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <p>Présenter à l'oral l'organisation d'une colonie de fourmis (durée : 2&nbsp;min&nbsp;30 à 3&nbsp;min&nbsp;30.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de diapo</h2>
+                <div>
+                    <img src="../images/diaporama.png" loading="lazy" alt="">
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale matériel -->
+        <section class="modal modal__equipment" id="modal-equipment">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Matériel</h2>
+            <ul class="modal__list">
+                <li>Logiciel dédié (NextCloud, LibreOffice, PowerPoint, …).</li>
+                <li>Documents numériques variés.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-infos">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Organiser les informations</h2>
+            <ul class="modal__list">
+                <li>Diapo d'accueil.</li>
+                <li>Sommaire.</li>
+                <li>Mots-clés, idées principales.</li>
+                <li>Enchaînement cohérent.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-diapos">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Construire les diapos</h2>
+            <ul class="modal__list">
+                <li>Un seul document par diapo, rarement 2.</li>
+                <li>Titres, mots-clés, légendes.</li>
+                <li>Jamais de texte long.</li>
+                <li>Documents nets et lisibles.</li>
+                <li>Documents utiles, pas décoratifs.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-format">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Mettre en forme les diapos</h2>
+            <ul class="modal__list">
+                <li>Choix identique pour toutes les diapos :
+                    <ul class="modal__sub-list">
+                        <li>couleurs (3 maxi)</li>
+                        <li>arrière-plan discret, pas blanc</li>
+                        <li>polices d'écriture sobres</li>
+                        <li>taille de police (minimum 20 à 24)</li>
+                        <li>contour des documents</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-dynamize">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Dynamiser le contenu</h2>
+            <ul class="modal__list">
+                <li>Animations et transitions sobres.</li>
+                <li>Pas de décorations distrayantes.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai construit un support visuel efficace si…</h2>
+            <ul class="modal__list">
+                <li>J’ai créé une diapo pour le sommaire.</li>
+                <li>J'ai inséré un seul document, lisible et utile, par diapo.</li>
+                <li>J'ai limité la quantité de texte dans les diapos; le texte est lisible.</li>
+                <li>J'ai mis en forme les diapos de façon uniforme, sobre et esthétique.</li>
+                <li>J'ai utilisé des animations et des transitions sobres.</li>
+            </ul>
+        </section>
+    </aside>
+
+</body>
+</html>

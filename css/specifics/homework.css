@@ -1,0 +1,16 @@
+.homework-verb {
+    background-color: var(--yellow);
+}
+
+.homework-keyword {
+    border-bottom: 1px solid;
+}
+
+.label[data-part="abdomen"] {top: 87%; left: 65%; transform: translate(50%, 0);}
+.label[data-part="petiole"] {bottom: 90%; left: 75%}
+.label[data-part="thorax"] {top: 87%; left: 43%; transform: translate(50%, 0);}
+.label[data-part="eye"] {bottom: 80%; right: 75%}
+.label[data-part="antenna"] {bottom:61%; right: 77%}
+.label[data-part="mandibula"] {top: 52%; right: 80%}
+.label[data-part="feet"] {bottom: 90%; right: 44%}
+.label[data-part="head"] {top: 87%; right: 60%; transform: translate(-50%, 0);}

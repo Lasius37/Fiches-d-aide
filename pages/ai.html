@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Intelligence artificielle</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/ai.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER: retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Utiliser efficacement une IA</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Éléments à prendre en compte</h2>
+                <div>
+                    <ol class="step-btns">
+                        <li class="btn step-btn"><a href="#modal-can-do">Ce que l'IA peut faire</a></li>
+                        <li class="btn step-btn"><a href="#modal-cant-do">Ce que l'IA ne peut pas faire</a></li>
+                        <li class="btn step-btn"><a href="#modal-caution">Précautions à prendre</a></li>
+                        <li class="btn step-btn"><a href="#modal-rules">Règles d'utilisation</a></li>
+                    </ol>
+
+                    <a href="#modal-autoeval" class="btn autoeval-btn">Autoévaluation</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+
+            <!-- Exemple de consigne -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemples de mauvaise utilisation</h2>
+                <div>
+                    <table>
+                        <tr>
+                            <td>Prompt</td>
+                            <td>Réponse de l'IA</td>
+                            <td>Problème</td>
+                        </tr>
+                        <tr>
+                            <td class="ia">Explique comment les fourmis communiquent pour trouver de la nourriture.</td>
+                            <td class="ia">
+                                Les fourmis communiquent principalement grâce à des signaux sonores émis par
+                                leurs mandibules.
+                            </td>
+                            <td>Réponse scientifiquement inexacte</td>
+                        </tr>
+                        <tr>
+                            <td class="ia">
+                                Comment une colonie de fourmis s’organise pour trouver de la nourriture ?
+                            </td>
+                            <td class="ia">
+                                Les fourmis cherchent de la nourriture et la rapportent à la fourmilière.
+                            </td>
+                            <td>Réponse trop vague : pas de vocabulaire précis</td>
+                        </tr>
+                        <tr>
+                            <td class="ia">Explique la communication chez les fourmis.</td>
+                            <td class="ia">
+                                Les fourmis utilisent des composés chimiques sécrétés par des glandes exocrines
+                                spécialisées […]
+                            </td>
+                            <td>Niveau inadapté : trop compliqué en collège</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside>
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-can-do">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Ce que l'IA peut faire</h2>
+            <ul class="modal__list">
+                <li>Réexpliquer.</li>
+                <li>Reformuler un texte.</li>
+                <li>Corriger des fautes.</li>
+                <li>Donner des exemples.</li>
+                <li>Aider à organiser un travail.</li>
+                <li>Répondre à une question bien posée.</li>
+                <li>Aider à réviser (questions, résumés).</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-cant-do">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Ce que l'IA ne peut pas faire</h2>
+            <ul class="modal__list">
+                <li>Comprendre.</li>
+                <li>Réfléchir.</li>
+                <li>Vérifier si ce qu'elle dit est vrai.</li>
+                <li>Remplacer un raisonnement personnel.</li>
+                <li>Faire une expérience scientifique.</li>
+                <li>Observer.</li>
+                <li>Se mettre à la place de l'utilisateur.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-caution">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Précautions à prendre</h2>
+            <ul class="modal__list">
+                <li><span class="warning">⚠ </span>L'IA peut donner des réponses fausses.</li>
+                <li><span class="warning">⚠ </span>L'IA peut masquer une erreur en utilisant des termes complexes.</li>
+                <li><span class="warning">⚠ </span>L'IA peut "inventer" des détails.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-rules">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Règles d'utilisation</h2>
+            <ul class="modal__list">
+                <li>L'IA est un outil d'aide.</li>
+                <li><span class="warning">⚠ </span>L'IA n'est pas un professeur.</li>
+                <li><span class="warning">⚠ </span>L'IA ne remplace pas le travail personnel.</li>
+                <li><span class="warning">⚠ </span>Chacun est responsable de son travail.</li>
+            </ul>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai bien utilisé l'IA si…</h2>
+            <ul class="modal__list">
+                <li>J'ai conscience des limites de l'IA.</li>
+                <li>J'ai compris ce que me fournit l'IA.</li>
+                <li>J'ai vérifié ce que dit l'IA.</li>
+                <li>Je peux expliquer une réponse sans l'IA.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

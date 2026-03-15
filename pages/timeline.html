@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Frise chronologique</title>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/timeline.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1 class="header-item header-title">Lire une frise chronologique</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-presentation">Présenter la frise</a></li>
+                            <li><a class="btn step-btn" href="#modal-events">Repérer les événements</a></li>
+                            <li><a class="btn step-btn" href="#modal-answer">Rédiger la réponse</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <p>À partir de la frise, expliquer le fonctionnement d'une fourmilière au cours de l’année.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Exemple -->
+        <section class="wrapper">
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de frise chronologique</h2>
+                <div>
+                    <h3 class="title">L'année d'une fourmilière de <span class="italic">Lasius niger</span></h3>
+                    <img src="../images/timeline.svg" loading="lazy" alt="">
+                </div>
+            </article>
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de réponse</h2>
+                <div class="script script__pen">
+                    <p>
+                        À la fin du mois de février, la fourmilière reprend son activité. Cette étape
+                        dure moins de 2 mois, jusque mi-avril. Ensuite, la fourmilière est suffisamment active pour
+                        préparer l’essaimage, jusque fin juin-début juillet. L’essaimage a lieu à ce moment, lorsque
+                        les conditions sont favorables. À partir de ce jour, l’activité de la fourmilière est maximale,
+                        et il est même possible qu’un deuxième essaimage, moins important, survienne à la toute fin du
+                        mois d’août. À partir de la fin du mois de septembre, les jours raccourcissent. L’activité de
+                        la fourmilière diminue progressivement. Dans le mois de novembre, la fourmilière entre en
+                        hivernage. L’inactivité dure pendant la majeure partie de l’hiver.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-presentation">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Présenter la frise</h2>
+            <ul class="modal__list">
+                <li>Titre.</li>
+                <li>Échelle de temps (unité de mesure).</li>
+                <li>Début, fin.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-events">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Repérer les événements</h2>
+            <ul class="modal__list">
+                <li>Dates.</li>
+                <li>Périodes.</li>
+                <li>Ordonner (vieux → jeune).</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-answer">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Décrire l'évolution</h2>
+            <ul class="modal__list">
+                <li>Événéments demandés.</li>
+                <li>Dates et pédiodes précises.</li>
+                <li>Calcul des durées (différences).</li>
+            </ul>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai bien lu la frise chronologique si…</h2>
+            <ul class="modal__list">
+                <li>J'ai présenté la frise (titre, unité de temps, début, fin).</li>
+                <li>J'ai repéré les événements et leur ordre.</li>
+                <li>J'ai différencié les dates des périodes.</li>
+                <li>J'ai calculé les durées si besoin.</li>
+                <li>J'ai  justifié ma réponse en m’appuyant sur la frise.</li>
+                <li>Ma réponse est compréhensible par une personne qui n’a pas la frise.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

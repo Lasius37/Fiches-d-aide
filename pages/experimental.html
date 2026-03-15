@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Démarche expérimentale</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/experimental.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Suivre une démarche expérimentale</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <nav>
+                        <ol class="step-btns">
+                            <li class="btn step-btn"><a href="#modal-problem" id="problem-btn">Formuler le problème</a></li>
+                            <li class="btn step-btn"><a href="#modal-hypothesis" id="hypothesis-btn">Proposer une hypothèse</a></li>
+                            <li class="btn step-btn"><a href="#modal-test" id="test-btn">Concevoir l'expérience (tests)</a></li>
+                            <li class="btn step-btn"><a href="#modal-results" id="results-btn">Présenter les résultats</a></li>
+                            <li class="btn step-btn"><a href="#modal-conclusion" id="conclusion-btn">Interpréter et conclure</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple de consigne -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <p>Concevoir une expérience pour expliquer l'influence de l'humidité sur les déplacements de fourmis.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de réponse</h2>
+                <div class="script script__pen">
+                    <h3 class="script__title">Problème :</h3>
+                    <p>Comment l’humidité influence-t-elle les déplacements des fourmis ?</p>
+                    <h3 class="script__title">Hypothèse :</h3>
+                    <p>Je pense que les fourmis aiment l’humidité.</p>
+                    <h3 class="script__title">Expérience :</h3>
+                    <h4 class="script__sub-title">Matériel :</h4>
+                    <p>fourmilières, eau, nourriture</p>
+                    <h4 class="script__sub-title">Protocole :</h4>
+                    <ul>
+                        <li>Placer de la nourriture à 20 cm de l’entrée de chaque fourmilière.</li>
+                        <li>Quand les fourmis ont créé une piste, humidifier celle d’une seule fourmilière.</li>
+                        <li>Compter le nombre de fourmis qui quittent chaque piste pendant 5 min.</li>
+                    </ul>
+                    <h3 class="script__title">Résultats :</h3>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td>piste humide</td>
+                            <td>piste sèche</td>
+                        </tr>
+                        <tr>
+                            <td>fourmis qui quittent la piste</td>
+                            <td>42</td>
+                            <td>8</td>
+                        </tr>
+                    </table>
+                    <h3 class="script__title">Interprétation et conclusion :</h3>
+                    <p>
+                        On remarque que les fourmis dont la piste est humide ont tendance à la quitter davantage.
+                        On peut donc en conclure que l’hypothèse est fausse : les fourmis n’aiment pas l’humidité,
+                        elles la fuient.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-problem">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Formuler le problème</h2>
+            <ul class="modal__list">
+                <li>En général, une question.</li>
+                <li>Impossible d'y répondre tout de suite.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-hypothesis">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Proposer une hypothèse</h2>
+            <ul class="modal__list">
+                <li>Proposition de réponse, mais pas certaine.</li>
+                <li>« Peut-être », « Je pense que ».</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-test">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Concevoir l'expérience (tests)</h2>
+            <ul class="modal__list">
+                <li>Identifier les paramètres :
+                    <ul class="modal__sub-list">
+                        <li>ce qu'on modifie</li>
+                        <li>ce qu'on garde constant</li>
+                        <li>ce qu'on mesure</li>
+                    </ul>
+                </li>
+                <li>Liste du matériel.</li>
+                <li>Étapes du protocole.</li>
+                <li>Penser au témoin.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-results">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Présenter les résultats</h2>
+            <ul class="modal__list">
+                <li>Forme du document adaptée.</li>
+                <li>Observation précise.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-conclusion">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Interpréter et conclure</h2>
+            <ul class="modal__list">
+                <li>Comparaison, mise en relation.</li>
+                <li>Validation des hypothèses.</li>
+                <li>Réponse au problème.</li>
+            </ul>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai bien suivi la démarche si…</h2>
+            <ul class="modal__list">
+                <li>J'ai bien identifié le problème.</li>
+                <li>J'ai formulé une hypothèse testable.</li>
+                <li>J'ai bien identifié les paramètres.</li>
+                <li>J'ai obtenu des résultats exploitables.</li>
+                <li>J'ai rédigé un raisonnement structuré qui répond au problème.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

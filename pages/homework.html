@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Exercice</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/homework.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Faire un exercice</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-read">Analyser la consigne</a></li>
+                            <li><a class="btn step-btn" href="#modal-answer">Produire la réponse</a></li>
+                            <li><a class="btn step-btn" href="#modal-check">Vérifier son travail</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple de consigne -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <p>
+                        <span class="homework-verb">Légender</span> le <span class="homework-keyword">schéma</span> d'une
+                        <span class="homework-keyword">fourmi</span> à l'aide du site
+                        <span class="homework-keyword">www.vikidia.org</span>.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de réponse</h2>
+                <div>
+                    <figure class="script">
+                        <img src="../images/homework.png" loading="lazy" alt="Schéma d'une fourmi">
+
+                        <figcaption class="labels script__pencil">
+                            <span class="label" data-part="abdomen">abdomen</span>
+                            <span class="label" data-part="petiole">pétiole</span>
+                            <span class="label" data-part="thorax">thorax</span>
+                            <span class="label" data-part="eye">œil</span>
+                            <span class="label" data-part="antenna">antenne</span>
+                            <span class="label" data-part="mandibula">mandibule</span>
+                            <span class="label" data-part="feet">patte</span>
+                            <span class="label" data-part="head">tête</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-read">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Analyser la consigne</h2>
+            <ul class="modal__list">
+                <li>Verbe (ici, au fluo).</li>
+                <li>Mots importants (ici, soulignés).</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-answer">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Produire la réponse</h2>
+            <ul class="modal__list">
+                <li>La réponse doit être :
+                    <ul class="modal__sub-list">
+                        <li>soignée</li>
+                        <li>précise</li>
+                        <li>cohérente avec le verbe de consigne (quantité, forme)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-check">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Vérifier son travail</h2>
+            <ul class="modal__list">
+                <li>Travail soigné.</li>
+                <li>Correspondance à la consigne.</li>
+                <li>Réponse compréhensible par tous.</li>
+            </ul>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : mon exercice est bien fait si…</h2>
+            <ul class="modal__list">
+                <li>J'ai décomposé la consigne (verbe, mots importants).</li>
+                <li>J'ai compris ce qu'on attend de moi avant de commencer à travailler.</li>
+                <li>J'ai réalisé un travail soigné.</li>
+                <li>Ma réponse est compréhensible.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

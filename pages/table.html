@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Tableau</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/table.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1 class="header-item headerBouton de retour au menuitle">Réaliser un tableau à double entrée</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <a href="#modal-equipment" class="btn equipment-btn" id="equipment-btn">Matériel</a>
+
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-columns">Construire les colonnes</a></li>
+                            <li><a class="btn step-btn" href="#modal-rows">Construire les lignes</a></li>
+                            <li><a class="btn step-btn" href="#modal-cells">Compléter les cases</a></li>
+                            <li><a class="btn step-btn" href="#modal-title">Ajouter un titre</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple de consigne -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <p>
+                        Réaliser un tableau permettant de comparer quelques espèces de fourmis françaises selon la
+                        taille moyenne des ouvrières, l'effectif d'une colonie, la température d'élevage, la période
+                        de reproduction, le régime alimentaire.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de tableau à double entrée</h2>
+                <div class="script script__pencil">
+                    <h3 class="script__title script__title-center">Quelques espèces de fourmis françaises</h3>
+                    <table class="prod-table">
+                        <tr>
+                            <td class="empty-cell"></td>
+                            <td class="prod-table-data table-datacol">Lasius niger</td>
+                            <td class="prod-table-data table-datacol">Messor barbarus</td>
+                            <td class="prod-table-data table-datacol">Tetramorium caespitum</td>
+                        </tr>
+                        <tr>
+                            <td class="prod-head">Taille moyenne des ouvrières</td>
+                            <td class="prod-table-data">3 à 5 mm</td>
+                            <td class="prod-table-data">4 à 12 mm</td>
+                            <td class="prod-table-data">2 à 4 mm</td>
+                        </tr>
+                        <tr>
+                            <td class="prod-head">Effectif d'une colonie</td>
+                            <td class="prod-table-data">20&nbsp;000</td>
+                            <td class="prod-table-data">50&nbsp;000</td>
+                            <td class="prod-table-data">30&nbsp;000</td>
+                        </tr>
+                        <tr>
+                            <td class="prod-head">Température d'élevage</td>
+                            <td class="prod-table-data">23 à 26 °C</td>
+                            <td class="prod-table-data">25 à 30 °C</td>
+                            <td class="prod-table-data">25 à 28 °C</td>
+                        </tr>
+                        <tr>
+                            <td class="prod-head">Période de reproduction</td>
+                            <td class="prod-table-data">de juillet à août</td>
+                            <td class="prod-table-data">de juillet à septembre</td>
+                            <td class="prod-table-data">de juin à août</td>
+                        </tr>
+                        <tr>
+                            <td class="prod-head">Régime alimentaire</td>
+                            <td class="prod-table-data">omnivore (surtout liquides sucrés)</td>
+                            <td class="prod-table-data">granivore</td>
+                            <td class="prod-table-data">omnivore (surtout insectivore)</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale matériel -->
+        <section class="modal modal__equipment" id="modal-equipment">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Matériel</h2>
+            <ul class="modal__list">
+                <li>Crayon à papier taillé.</li>
+                <li>Gomme, taille-crayon.</li>
+                <li>Règle.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-columns">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Construire les colonnes</h2>
+            <ul class="modal__list">
+                <li>Éléments à comparer.</li>
+                <li>Titres simples.</li>
+                <li>Assez larges.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-rows">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Construire les lignes</h2>
+            <ul class="modal__list">
+                <li>Critères de comparaison.</li>
+                <li>Titres simples.</li>
+                <li>Assez hautes.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-cells">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Compléter les cases</h2>
+            <ul class="modal__list">
+                <li>Informations complètes et précises.</li>
+                <li>Texte court (pas de phrases).</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-title">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Ajouter un titre</h2>
+            <ul class="modal__list">
+                <li>Sujet du tableau.</li>
+                <li>Mis en valeur.</li>
+            </ul>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai bien tracé mon tableau si…</h2>
+            <ul class="modal__list">
+                <li>J'ai réalisé un travail soigné (un travail au crayon est accepté).</li>
+                <li>J'ai donné des titres cohérents et une largeur adaptée aux colonnes.</li>
+                <li>J'ai donné des titres cohérents et une hauteur adaptée aux lignes.</li>
+                <li>J'ai tracé un tableau assez grand et bien proportionné.</li>
+                <li>J'ai complété les cases avec un contenu court et précis.</li>
+                <li>J'ai proposé un titre précis et je l'ai mis en valeur.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

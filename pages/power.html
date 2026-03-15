@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Puissances de 10</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/power.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Utiliser les puissances de 10</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-power">Connaître les puissances de 10</a></li>
+                            <li><a class="btn step-btn" href="#modal-sc-write">Maîtriser l'écriture scientifique</a></li>
+                            <li><a class="btn step-btn" href="#modal-units">Convertir avec les puissances de 10</a></li>
+                            <li><a class="btn step-btn" href="#modal-multiply">Multiplier des puissances de 10</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <ol>
+                        <li>Donner l'écriture scientifique de la masse d'une fourmi.</li>
+                        <li>Calculer la masse de 22&nbsp;000 ouvrières avec les puissances de 10.</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de donnée</h2>
+                <div>
+                    <p>On estime qu'une fourmi ouvrière pèse environ 0,003 g.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de calcul</h2>
+                <div class="script script__pen">
+                    <h3 class="script__title">Question 1 :</h3>
+                    <table class="power-table">
+                        <tr>
+                            <td class="right">0,003</td>
+                            <td>=</td>
+                            <td class="left">3 × 0,001</td>
+                        </tr>
+                        <tr>
+                            <td class="right"></td>
+                            <td>=</td>
+                            <td class="left">3 × 10<sup>-3</sup></td>
+                        </tr>
+                    </table>
+                    <p>Une fourmi pèse 3 × 10<sup>-3</sup> g.</p>
+                </div>
+
+            </article>
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de calcul</h2>
+                <div class="script script__pen">
+                    <div class="script__title">Question 2 :</div>
+                    <table class="power-table">
+                        <tr>
+                            <td class="right">22&nbsp;000</td>
+                            <td>=</td>
+                            <td class="left">2,2 × 10&nbsp;000</td>
+                        </tr>
+                        <tr>
+                            <td class="right"></td>
+                            <td>=</td>
+                            <td class="left">2,2 × 10<sup>4</sup></td>
+                        </tr>
+                    </table>
+                    <p>Il y a 2,2 × 10<sup>4</sup> ouvrières.</p>
+                    <table class="power-table">
+                        <tr>
+                            <td class="right">3 × 10<sup>-3</sup> × 2,2 × 10<sup>4</sup></td>
+                            <td>=</td>
+                            <td class="left">6,6 × 10<sup>-3+4</sup></td>
+                        </tr>
+                        <tr>
+                            <td class="right"></td>
+                            <td>=</td>
+                            <td class="left">6,6 × 10<sup>1</sup></td>
+                        </tr>
+                        <tr>
+                            <td class="right"></td>
+                            <td>=</td>
+                            <td class="left">66</td>
+                        </tr>
+                    </table>
+                    <p>20&nbsp;000 ouvrières pèsent = 6,6 × 10<sup>1</sup>, soit 66 g.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-power">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Connaître les puissances de 10</h2>
+            <ul class="modal__list">
+                <li>Pour écrire les très grands ou très petits nombres.</li>
+                <li>10<sup>0</sup> = 1 ; 10<sup>1</sup> = 10 ; 10<sup>2</sup> = 100 ; 10<sup>3</sup> = 1&nbsp;000</li>
+                <li>
+                    <span class="power-frac">
+                        <span>10<sup>-1</sup> =</span>
+                        <span>
+                            <div class="power-frac__num">1</div>
+                            <div class="power-frac__fracbar"></div>
+                            <div class="power-frac__denom">10</div>
+                        </span>
+                        <span>= 1 ; 10<sup>-2</sup> =</span>
+                        <span>
+                            <div class="power-frac__num">1</div>
+                            <div class="power-frac__fracbar"></div>
+                            <div class="power-frac__denom">100</div>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-sc-write">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Maîtriser l'écriture scientifique</h2>
+            <ul class="modal__list">
+                <li>Forme générale : a × 10<sup>n</sup>
+                    <ul class="modal__sub-list">
+                        <li>1 ≤ a < 10</li>
+                        <li>n : nombre entier</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-units">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Convertir avec les puissances de 10</h2>
+            <table>
+                <tr>
+                    <td>k…</td>
+                    <td>h…</td>
+                    <td>da…</td>
+                    <td>…</td>
+                    <td>d…</td>
+                    <td>c…</td>
+                    <td>m…</td>
+                </tr>
+                <tr>
+                    <td>10<sup>3</sup></td>
+                    <td>10<sup>2</sup></td>
+                    <td>10<sup>1</sup></td>
+                    <td>1</td>
+                    <td>10<sup>-1</sup></td>
+                    <td>10<sup>-2</sup></td>
+                    <td>10<sup>-3</sup></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-multiply">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Multiplier des puissances de 10</h2>
+            <ul class="modal__list">
+                <li>Séparer les nombres et les puissances.<br>
+                    <table class="power-table">
+                        <tr>
+                            <td class="right">3 × 10<sup>4</sup> × 2 × 10<sup>5</sup></td>
+                            <td>=</td>
+                            <td class="left">3 × 2 × 10<sup>4</sup> × 10<sup>5</sup></td>
+                        </tr>
+                        <tr>
+                            <td class="right"></td>
+                            <td>=</td>
+                            <td class="left">6 × 10<sup>4+5</sup></td>
+                        </tr>
+                        <tr>
+                            <td class="right"></td>
+                            <td>=</td>
+                            <td class="left">6 × 10<sup>9</sup></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai bien utilisé les puissances de 10 si…</h2>
+            <ul class="modal__list">
+                <li>Je sais écrire un nombre sous sa forme scientifique : a × 10<sup>n</sup>.</li>
+                <li>Je connais le sens des puissances positives et négatives.</li>
+                <li>J'ai utilisé la bonne unité.</li>
+                <li>J'ai obtenu un résultat réaliste.</li>
+                <li>Je peux expliquer ma démarche sansa calculatrice.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Microscope</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/microscope.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Utiliser un microscope</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-first">Régler au petit grossissement</a></li>
+                            <li><a class="btn step-btn" href="#modal-second">Régler au moyen grossissement</a></li>
+                            <li><a class="btn step-btn" href="#modal-third">Régler au fort grossissement</a></li>
+                            <li><a class="btn step-btn" href="#modal-zoom">Calculer un grossissement</a></li>
+                            <li><a class="btn step-btn" href="#modal-comfort">Ajuster le confort d'observation</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple de consigne -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <p>Observer une fourmi au microscope, grossie 40 fois.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Matériel -->
+        <section class="wrapper">
+
+            <!-- Matériel -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Matériel</h2>
+                <div>
+                    <figure>
+
+                        <img src="../images/microscope.png" loading="lazy" alt="">
+                        <figcaption>
+                            <span class="label label__microscope" data-part="eyepiece">oculaire</span>
+                            <span class="label label__microscope" data-part="head">tête</span>
+                            <span class="label label__microscope" data-part="lens">objectifs</span>
+                            <span class="label label__microscope" data-part="stem">potence</span>
+                            <span class="label label__microscope" data-part="board">platine</span>
+                            <span class="label label__microscope" data-part="diaphragm">diaphragme</span>
+                            <span class="label label__microscope" data-part="wheels">vis de mise<br>au point</span>
+                            <span class="label label__microscope" data-part="switch">interrupteur</span>
+                            <span class="label label__microscope" data-part="dimmer">variateur</span>
+                            <a class="view-icon" href="#modal-microscope-result">
+                                <i class="bi bi-eye-fill"></i>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-first">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Régler au petit grossissement</h2>
+            <ul class="modal__list">
+                <li><span class="warning">⚠ </span>Objectif rouge + grosse vis.</li>
+                <li>Réglage parfaitement net.</li>
+                <li>Centrage de l'observation.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-second">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Régler au moyen grossissement</h2>
+            <ul class="modal__list">
+                <li><span class="warning">⚠ </span>Objectif jaune + petite vis.</li>
+                <li>Réglage parfaitement net.</li>
+                <li>Centrage de l'observation.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-third">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Régler au fort grossissement</h2>
+            <ul class="modal__list">
+                <li><span class="warning">⚠ </span>Objectif bleu + petite vis.</li>
+                <li>Réglage le plus net possible.</li>
+                <li>Centrage de l'observation.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps microscope__zoom" id="modal-zoom">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Calculer un grossissement</h2>
+            <div>
+                <div>
+                    <img src="../images/eyepiece.png" loading="lazy" alt="Photo d'oculaire montrant le grossissement">
+                    <img src="../images/lens.png" loading="lazy" alt="Photo d'objectifs montrant le grossissement">
+                </div>
+                <p>10 × 4&nbsp;&nbsp;</p>
+                <img src="../images/arrow.svg" loading="lazy" alt="Flèche vers le bas">
+                <p>Grossissement : 40</p>
+            </div>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-comfort">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Ajuster le confort d'observation</h2>
+            <ul class="modal__list">
+                <li>Intensité lumineuse avec le variateur.</li>
+                <li>Contraste avec le diaphragme.</li>
+            </ul>
+        </section>
+
+        <!-- Modale résultat -->
+        <section class="modal microscope__result" id="modal-microscope-result">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Exemple d'observation</h2>
+            <img src="../images/ant_microscope.png" loading="lazy" alt="Photo d'une fourmi observée au microscope">
+            <span class="label label__microscope" data-part="pointer">aiguille</span>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai bien utilisé le microscope si…</h2>
+            <ul class="modal__list">
+                <li>J'ai utilisé les objectifs dans l'ordre : rouge, puis jaune, puis bleu.</li>
+                <li>J'ai utilisé les vis de mise au point avec le bon objectif.</li>
+                <li>J'ai obtenu une image finale nette et centrée.</li>
+                <li>J'ai bien choisi le grossissement final.</li>
+                <li>J'observe dans des conditions confortables.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

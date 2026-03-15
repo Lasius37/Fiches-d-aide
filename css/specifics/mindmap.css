@@ -1,0 +1,66 @@
+.mindmap__title {
+    color: var(--red);
+    border: 2px solid var(--red);
+    border-radius: var(--border-radius);
+}
+
+.mindmap__sub, .mindmap__title {
+    background-color: var(--white);
+    padding: 0.3rem;
+}
+
+.mindmap__sub {
+    border-radius: 50%;
+}
+
+.mindmap__blue {
+    color: var(--dark-blue);
+}
+
+.mindmap__yellow {
+    color: var(--yellow);
+}
+
+.mindmap__purple {
+    color: var(--purple);
+}
+
+.mindmap__brown {
+    color: var(--brown);
+}
+
+.mindmap__green {
+    color: var(--green);
+}
+
+.label[data-part="title"] {top: 35%; left: 43%}
+
+.label[data-part="breeding"] {top: 18%; left: 34%}
+.label[data-part="temperature"] {bottom: 77%; right: 77.5%}
+.label[data-part="moisture"] {bottom: 85.5%; right: 64%}
+.label[data-part="food"] {bottom: 89.5%; left: 38%}
+.label[data-part="winter"] {bottom: 80%; left: 56%}
+
+.label[data-part="lifecycle"] {bottom: 70%; right: 33%}
+.label[data-part="queen"] {top: 5%; left: 70%; background-color: transparent}
+.label[data-part="egg"] {top: 7%; left: 92%; background-color: transparent}
+.label[data-part="larva"] {top: 18.5%; left: 92%; background-color: transparent}
+.label[data-part="pupa"] {top: 40%; left: 88%; background-color: transparent}
+.label[data-part="gyne"] {top: 45%; left: 65%; background-color: transparent}
+.label[data-part="male"] {top: 30%; right: 30%; background-color: transparent}
+.label[data-part="worker"] {bottom: 76.5%; right: 22%; background-color: transparent}
+
+.label[data-part="colony"] {top: 55%; left: 57%}
+.label[data-part="mating"] {bottom: 43%; left: 72%; background-color: transparent}
+.label[data-part="foundation"] {bottom: 30%; left: 87%; background-color: transparent}
+.label[data-part="growth"] {top: 86%; left: 71%; background-color: transparent}
+.label[data-part="swarming"] {top: 74%; right: 37%; background-color: transparent}
+
+.label[data-part="anthill"] {top: 56%; left: 34%}
+.label[data-part="hunting"] {top: 84%; right: 48%}
+.label[data-part="nest"] {top: 76%; right: 73%}
+
+.label[data-part="examples"] {top: 39%; right: 62%}
+.label[data-part="messor"] {bottom: 60%; right: 82%}
+.label[data-part="tetramorium"] {top: 42%; right: 84%}
+.label[data-part="lasius"] {top: 55%; right: 80%}

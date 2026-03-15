@@ -1,0 +1,18 @@
+.prompt {
+    background-color: var(--darkgrey);
+    color: var(--white);
+    padding: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.prompt * {
+    font-family: var(--ia-font);
+    font-size: var(--std-size);
+}
+
+.prompt ul li {
+    list-style: "- " inside;
+}

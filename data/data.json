@@ -1,0 +1,168 @@
+{
+	"pages": [
+		{"title": "Organiser son classeur","tag": "binder"},
+		{"title": "Apprendre une leçon","tag": "lesson"},
+		{"title": "Faire un exercice","tag": "homework"},
+		{"title": "Réviser pour une évaluation","tag": "assessment"},
+		{"title": "Reconnaître les consignes types","tag": "instructions"},
+		{"title": "Manipuler en sécurité","tag": "security"},
+		{"title": "Suivre une démarche expérimentale","tag": "experimental"},
+		{"title": "Faire une recherche sur Internet","tag": "search_infos"},
+		{"title": "Réaliser un diaporama","tag": "diaporama"},
+		{"title": "Préparer un exposé oral","tag": "presentation"},
+		{"title": "Lire un document","tag": "document"},
+		{"title": "Lire une carte ou un plan","tag": "map"},
+		{"title": "Lire une frise chronologique","tag": "timeline"},
+		{"title": "Lire un graphique","tag": "read_graph"},
+		{"title": "Tracer un graphique","tag": "draw_graph"},
+		{"title": "Utiliser un microscope","tag": "microscope"},
+		{"title": "Réaliser un dessin d'observation","tag": "drawing"},
+		{"title": "Réaliser un schéma","tag": "blueprint"},
+		{"title": "Réaliser un schéma fonctionnel","tag": "f_blueprint"},
+		{"title": "Réaliser un tableau à double entrée","tag": "table"},
+		{"title": "Réaliser une carte mentale","tag": "mindmap"},
+		{"title": "Rédiger une réponse structurée","tag": "structured_answer"},
+		{"title": "Réaliser des conversions","tag": "conversions"},
+		{"title": "Calculer avec des unités","tag": "units"},
+		{"title": "Manipuler les pourcentages","tag": "percent"},
+		{"title": "Utiliser les puissances de 10","tag": "power"},
+		{"title": "Utiliser efficacement une IA","tag": "ai"},
+		{"title": "Rédiger un prompt pour une IA","tag": "prompt"}
+	],
+	"index": [
+		{"word": "Abscisse", "tags": ["draw_graph", "read_graph"]},
+		{"word": "Axes", "tags": ["draw_graph", "read_graph"]},
+		{"word": "Calcul", "tags": ["units"]},
+		{"word": "Carte", "tags": ["map"]},
+		{"word": "Carte mentale", "tags": ["mindmap"]},
+		{"word": "Chronologie ", "tags": ["timeline"]},
+		{"word": "Classeur", "tags": ["binder"]},
+		{"word": "Conclusion", "tags": ["experimental", "structured_answer"]},
+		{"word": "Consigne", "tags": ["instructions"]},
+		{"word": "Conversion", "tags": ["conversions"]},
+		{"word": "Courbe", "tags": ["draw_graph", "read_graph"]},
+		{"word": "Date", "tags": ["timeline"]},
+		{"word": "Démarche expérimentale", "tags": ["experimental"]},
+		{"word": "Dessin d'observation", "tags": ["drawing"]},
+		{"word": "Diaporama", "tags": ["diaporama"]},
+		{"word": "Document", "tags": ["document"]},
+		{"word": "Durée", "tags": ["timeline"]},
+		{"word": "Échelle", "tags": ["map", "read_graph"]},
+		{"word": "Écriture scientifique", "tags": ["power"]},
+		{"word": "Exercice", "tags": ["homework"]},
+		{"word": "Exposé", "tags": ["presentation"]},
+		{"word": "Expérience", "tags": ["experimental", "security"]},
+		{"word": "Évaluation", "tags": ["assessment"]},
+		{"word": "Formule", "tags": ["units"]},
+		{"word": "Frise", "tags": ["timeline"]},
+		{"word": "Graphique", "tags": ["draw_graph", "read_graph"]},
+		{"word": "Grossissement", "tags": ["drawing", "microscope"]},
+		{"word": "Hypothèse", "tags": ["experimental"]},
+		{"word": "IA", "tags": ["ai", "prompt"]},
+		{"word": "Interprétation", "tags": ["document", "experimental"]},
+		{"word": "Introduction", "tags": ["structured_answer"]},
+		{"word": "Légende", "tags": ["blueprint", "drawing", "f_blueprint"]},
+		{"word": "Leçon", "tags": ["lesson"]},
+		{"word": "Manipulation", "tags": ["security"]},
+		{"word": "Mesure", "tags": ["experimental"]},
+		{"word": "Microscope", "tags": ["microscope"]},
+		{"word": "Modélisation", "tags": ["drawing"]},
+		{"word": "Oral", "tags": ["presentation"]},
+		{"word": "Ordonnée", "tags": ["draw_graph", "read_graph"]},
+		{"word": "Paramètre", "tags": ["experimental"]},
+		{"word": "Plan", "tags": ["map", "presentation"]},
+		{"word": "Pourcentage", "tags": ["percent"]},
+		{"word": "Protocole", "tags": ["experimental"]},
+		{"word": "Puissances de 10", "tags": ["power"]},
+		{"word": "Recherche", "tags": ["search_infos"]},
+		{"word": "Révision", "tags": ["assessment"]},
+		{"word": "Résultats", "tags": ["experimental"]},
+		{"word": "Schéma", "tags": ["blueprint"]},
+		{"word": "Schéma fonctionnel", "tags": ["f_blueprint"]},
+		{"word": "Sécurité", "tags": ["security"]},
+		{"word": "Source fiable", "tags": ["search_infos"]},
+		{"word": "Tableau à double entrée", "tags": ["table"]},
+		{"word": "Unité", "tags": ["units"]},
+		{"word": "Variable", "tags": ["experimental"]}
+	],
+	"problemCategories": [
+		{
+			"category": "Compréhension",
+			"problems": [
+				{"title": "Je ne comprends pas une consigne","tags": ["instructions"]},
+				{"title": "Je ne sais pas ce que je dois faire","tags": ["instructions"]},
+				{"title": "Je ne comprends pas le document","tags": ["document", "map", "read_graph", "timeline"]}
+			]
+		},
+		{
+			"category": "Méthode",
+			"problems": [
+				{"title": "Je ne sais pas comment ranger mon classeur","tags": ["binder"]},
+				{"title": "Je n'arrive pas à apprendre ma leçon","tags": ["lesson"]},
+				{"title": "Je n'arrive pas à faire un exercice","tags": ["homework", "instructions"]},
+				{"title": "Je n'arrive pas à réviser pour préparer une évaluation","tags": ["assessment"]},
+				{"title": "Je ne sais pas comment organiser ma réponse","tags": ["structured_answer"]},
+				{"title": "Je n'arrive pas à rédiger","tags": ["structured_answer"]}
+			]
+		},
+		{
+			"category": "Manipulation et microscope",
+			"problems": [
+				{"title": "Je ne connais pas les consignes de sécurité","tags": ["security"]},
+				{"title": "Je ne sais pas utiliser un microscope","tags": ["microscope"]},
+				{"title": "Je ne sais pas calculer un grossissement","tags": ["microscope"]}
+			]
+		},
+		{
+			"category": "Production d'un document",
+			"problems": [
+				{"title": "Je ne sais pas faire un graphique","tags": ["draw_graph"]},
+				{"title": "Je ne sais pas quel axe choisir","tags": ["draw_graph"]},
+				{"title": "Je ne sais pas choisir une échelle","tags": ["draw_graph"]},
+				{"title": "Je ne sais pas faire un dessin d'observation","tags": ["drawing"]},
+				{"title": "Je ne sais pas faire un schéma","tags": ["blueprint"]},
+				{"title": "Je ne sais pas faire un schéma fonctionnel","tags": ["f_blueprint"]},
+				{"title": "Je ne sais pas faire un tableau","tags": ["table"]},
+				{"title": "Je ne sais pas faire une carte mentale","tags": ["mindmap"]}
+			]
+		},
+		{
+			"category": "Démarche scientifique",
+			"problems": [
+				{"title": "Je ne sais pas formuler une hypothèse","tags": ["experimental"]},
+				{"title": "Je ne sais pas proposer une expérience","tags": ["experimental"]},
+				{"title": "Je ne sais pas identifier les paramètres","tags": ["experimental"]},
+				{"title": "Je ne sais pas interpréter des résultats","tags": ["experimental"]},
+				{"title": "Je ne sais pas conclure","tags": ["experimental"]}
+			]
+		},
+		{
+			"category": "Exposé",
+			"problems": [
+				{"title": "Je ne sais pas faire une recherche fiable","tags": ["search_infos"]},
+				{"title": "Je ne sais pas choisir une source","tags": ["search_infos"]},
+				{"title": "Je ne sais pas faire un diaporama","tags": ["diaporama"]},
+				{"title": "Je ne sais pas préparer un exposé oral","tags": ["presentation"]}
+			]
+		},
+		{
+			"category": "Calculs",
+			"problems": [
+				{"title": "Je ne sais pas convertir","tags": ["conversions"]},
+				{"title": "Je ne sais pas placer la virgule","tags": ["conversions"]},
+				{"title": "Je ne sais pas utiliser une formule mathématique","tags": ["units"]},
+				{"title": "Je ne sais pas calculer un pourcentage","tags": ["percent"]},
+				{"title": "Je ne sais pas utiliser un pourcentage","tags": ["percent"]},
+				{"title": "Je ne sais pas utiliser les puissances de 10","tags": ["power"]}
+			]
+		},
+		{
+			"category": "Intelligence Artificielle",
+			"problems": [
+				{"title": "Je ne sais pas utiliser l'IA","tags": ["ai"]},
+				{"title": "Je ne sais pas rédiger un prompt","tags": ["prompt"]},
+				{"title": "Je ne sais pas vérifier une réponse d'IA","tags": ["ai", "prompt"]}
+			]
+		}
+	]
+}

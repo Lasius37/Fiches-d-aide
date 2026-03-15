@@ -1,0 +1,5 @@
+.label[data-part=food] {bottom: 90%; right: 75%;}
+.label[data-part=path] {bottom: 56%; left: 32%;}
+.label[data-part=paper] {bottom: 61%; right: 84%;}
+.label[data-part=nest] {bottom: 11%; right: 91%;}
+.label[data-part=turn] {top: 52%; left: 38%;}

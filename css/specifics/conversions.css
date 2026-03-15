@@ -1,0 +1,12 @@
+.wrapper__element-example ol li {
+    list-style: decimal inside;
+}
+
+.conversion__table.script tr td {
+    border-color: var(--grey);
+    text-align: center;
+}
+
+.conversion__table {
+    margin: 0.2rem auto;
+}

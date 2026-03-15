@@ -1,0 +1,31 @@
+.instructions .verbs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.instructions .verbs a {
+    display: block;
+    width: 10rem;
+    color: var(--pink);
+    border: 2px solid;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+}
+
+.instructions .verbs a:hover {
+    background-color: var(--light-pink);
+}
+
+.instructions .verbs a:active {
+    background-color: var(--pink);
+    color: var(--light-pink);
+}
+
+.modal__autoeval dt {
+    font-weight: bold;
+    padding-top: 0.5rem;
+}

@@ -1,0 +1,6 @@
+.label[data-part="name"] {top: 8%; left: 35%; rotate: -5deg; font-size: 1.1rem;}
+.label[data-part="class"] {top: 4%; left: 65%; rotate: -5deg; font-size: 1.1rem;}
+.label[data-part="year"] {bottom: 7%; left: 39%; rotate: -5deg; font-size: 1.1rem;}
+.label[data-part="course"] {top: 7%; right: 23%; rotate: 85deg; font-size: 1.1rem;}
+.label[data-part="exercises"] {top: 21%; right: 20.5%; rotate: 85deg; font-size: 1.1rem;}
+.label[data-part="hold"] {top: 37%; right: 18.5%; rotate: 85deg; font-size: 1.1rem;}

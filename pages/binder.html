@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Classeur</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/binder.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Organiser son classeur</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-store">En classe : ranger à chaque séance</a></li>
+                            <li><a class="btn step-btn" href="#modal-find">En classe et la maison : retrouver un document</a></li>
+                            <li><a class="btn step-btn" href="#modal-prepare">À la maison : préparer son classeur</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Structure du classeur</h2>
+                <div>
+                    <figure class="script">
+                        <img src="../images/binder.png" loading="lazy" alt="Photo d'un classeur ouvert">
+
+                        <figcaption class="labels">
+                            <span class="label script__pen" data-part="name">NOM Prénom</span>
+                            <span class="label script__pen" data-part="class">Classe</span>
+                            <span class="label script__pen" data-part="year">Année scolaire</span>
+                            <span class="label" data-part="course">Cours</span>
+                            <span class="label" data-part="exercises">Exercices</span>
+                            <span class="label" data-part="hold">À conserver</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-store">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>En classe : ranger à chaque séance</h2>
+            <ul class="modal__list">
+                <li>Partie "Cours" : activités dans l'ordre, documents collés, bilans copiés.</li>
+                <li>Partie "Exercices" : exercices collés.</li>
+                <li>Partie "À garder" : définitions copiées.</li>
+                <li>Ranger les feuilles au fur et à mesure.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-find">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>En classe et la maison : retrouver un document</h2>
+            <ul class="modal__list">
+                <li>Bon intercalaire.</li>
+                <li>Titre du bilan ou document voulu.</li>
+                <li>Objectif : trouver en moins de 15 secondes.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-prepare">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>À la maison : préparer son classeur</h2>
+            <ul class="modal__list">
+                <li>Contenu complet (voir sur Éléa).</li>
+                <li>Feuilles neuves + quelques pochettes en plastique.</li>
+            </ul>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : mon classeur est bien organisé si…</h2>
+            <ul class="modal__list">
+                <li>J'ai rangé toutes les feuilles dans l'ordre.</li>
+                <li>J'ai collé tous les documents à leur place.</li>
+                <li>J'ai copié chaque élément au bon endroit.</li>
+                <li>J'ai mis à jour le lexique dans la partie "À garder".</li>
+                <li>Je peux retrouver n'importe quelle feuille en moins de 15 secondes.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

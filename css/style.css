@@ -1,0 +1,470 @@
+@import "constants.css";
+
+
+/***********************************************************************************************************************
+      basic settings
+***********************************************************************************************************************/
+html, body, ul, ol, h1, h2, h3, h4, h5, h6, p, li, div, main, aside, section, header, footer {
+    margin: 0;
+    padding: 0;
+    font-family: var(--std-font);
+    font-size: var(--std-size);
+    line-height: var(--line-height);
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding-bottom: 1rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background:
+        linear-gradient(var(--white-tr), var(--white-tr)),
+        url(../images/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+table {
+    table-layout: fixed;
+}
+
+/***********************************************************************************************************************
+      header
+***********************************************************************************************************************/
+body > header {
+    margin: 0;
+    position: relative;
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+body > header h1 {
+    font-weight: bold;
+    padding: 1rem;
+    color: var(--pink);
+    text-align: center;
+}
+
+body > header h1, body > header i {
+    font-size: var(--title-size);
+}
+
+.index-header h1 {
+    color: var(--white);
+    background-color: var(--pink);
+}
+
+body > header a {
+    position: absolute;
+    left: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--pink);
+    border: 2px solid var(--white);
+    width: 2.2em;
+    height: 2.2em;
+    padding: 0.3em;
+    border-radius: var(--border-radius);
+}
+
+body > header a:hover {
+    border-color: var(--pink);
+}
+
+body > header a:active {
+    border-color: var(--pink);
+    color: var(--white);
+    background-color: var(--pink);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    text-align: justify;
+}
+
+/***********************************************************************************************************************
+      main (other pages)
+***********************************************************************************************************************/
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+    margin: 1rem;
+}
+
+main h2 {
+    color: var(--white);
+    background-color: var(--pink);
+    text-align: center;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    padding: 0.2rem 0;
+}
+
+.wrapper {
+    height: fit-content;
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.wrapper__element {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    width: fit-content;
+    margin: auto;
+}
+
+.wrapper__element > div {
+    margin: 1rem;
+}
+
+.wrapper__element-method > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.warning, .title {
+    color: var(--red);
+}
+
+.ok {
+    color: var(--green);
+}
+
+.title {
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/***********************************************************************************************************************
+      tables
+***********************************************************************************************************************/
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+table caption {
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+table td, table th {
+    border: 2px solid;
+    padding: 0.2rem 0.5rem;
+    min-width: 2em;
+}
+
+table td, table td * {
+    margin: auto;
+    text-align: center;
+}
+
+table td li{
+    text-align: left;
+    list-style: circle inside;
+}
+
+/***********************************************************************************************************************
+      buttons
+***********************************************************************************************************************/
+.step-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    counter-reset: step;
+}
+
+.step-btns > li {
+    counter-increment: step;
+}
+
+.step-btn {
+    color: var(--blue);
+    display: inline;
+}
+
+.step-btn::before {
+    content: counter(step) ". ";
+    min-width: 3ch;
+    text-align: right;
+}
+
+.equipment-btn {
+    color: var(--green);
+}
+
+.autoeval-btn {
+    color: var(--pink);
+}
+
+.step-btn:hover {
+    background-color: var(--light-blue);
+}
+
+.equipment-btn:hover {
+    background-color: var(--light-green);
+}
+
+.autoeval-btn:hover {
+    background-color: var(--light-pink);
+}
+
+.step-btn:active {
+    color: var(--light-blue);
+    border-color: var(--blue);
+    background-color: var(--blue);
+}
+
+.equipment-btn:active {
+    color: var(--light-green);
+    border-color: var(--green);
+    background-color: var(--green);
+}
+
+.autoeval-btn:active {
+    color: var(--light-pink);
+    border-color: var(--pink);
+    background-color: var(--pink);
+}
+
+/***********************************************************************************************************************
+      script
+***********************************************************************************************************************/
+.script, .script * {
+    font-family: var(--script-font);
+    font-size: var(--script-size);
+    line-height: 1.4rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.script table td,
+.script table th {
+    text-align: center;
+}
+
+.script__title {
+    color: var(--red);
+}
+
+.script__title-center {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.script__pen {
+    color: var(--blue);
+}
+
+.script__pencil {
+    color: var(--grey);
+}
+
+.script__marker {
+    background-color: var(--yellow);
+}
+
+.script li {
+    list-style: "- " inside;
+}
+
+.script table {
+    color: var(--grey);
+}
+
+/***********************************************************************************************************************
+      figures and caption
+***********************************************************************************************************************/
+figure {
+    position: relative;
+    margin: 0.5rem;
+}
+
+figure img {
+    display: block;
+    margin: auto;
+}
+
+.label {
+    position: absolute;
+    text-align: center;
+}
+
+/***********************************************************************************************************************
+      buttons
+***********************************************************************************************************************/
+.btn {
+    display: block;
+    text-align: center;
+    padding: 0.5em;
+    border: 2px solid;
+    border-radius: var(--border-radius);
+}
+
+.index-btn {
+    color: var(--pink);
+    border-color: var(--pink);
+    background-color: var(--white);
+}
+
+.index-btn:hover {
+    background-color: var(--light-pink);
+}
+
+.index-btn:active {
+    background-color: var(--pink);
+    color: var(--light-pink);
+}
+
+/***********************************************************************************************************************
+      aside
+***********************************************************************************************************************/
+aside {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    font-size: var(--std-size);
+    background-color: var(--black-tr);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+aside:has(.modal:target) {
+    display: flex;
+}
+
+aside .backdrop {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: relative;
+    background-color: var(--white);
+    padding: 1em;
+    border-radius: var(--border-radius);
+    max-width: min(80vw, 40em);
+    max-height: 85vh;
+    overflow: auto;
+    z-index: 1;
+}
+
+.modal h2 {
+    border-bottom: 2px solid;
+    padding-bottom: 0.5em;
+    padding-right: 3rem;
+    margin-bottom: 1em;
+}
+
+.modal header {
+    position: relative;
+}
+
+.modal i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    padding: 0.2rem;
+}
+
+.modal:target {
+    display: block;
+}
+
+.modal__equipment h2, .modal__equipment i {
+    color: var(--green);
+    border-color: var(--green);
+}
+
+.modal__steps h2, .modal__steps i {
+    color: var(--blue);
+    border-color: var(--blue);
+}
+
+.modal__autoeval h2, .modal__autoeval i {
+    color: var(--pink);
+    border-color: var(--pink);
+}
+
+.modal__steps i:hover {
+    background-color: var(--light-blue);
+}
+
+.modal__equipment i:hover {
+    background-color: var(--light-green);
+}
+
+.modal__autoeval i:hover {
+    background-color: var(--light-pink);
+}
+
+.modal__steps i:active {
+    background-color: var(--blue);
+    color: var(--light-blue);
+}
+
+.modal__equipment i:active {
+    background-color: var(--green);
+    color: var(--light-green);
+}
+
+.modal__autoeval i:active {
+    background-color: var(--pink);
+    color: var(--light-pink);
+}
+
+.modal__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.modal__list > li {
+    list-style: inside var(--char-list);
+}
+
+.modal__sub-list li {
+    list-style: inside circle;
+    text-indent: 1em;
+}

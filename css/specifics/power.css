@@ -1,0 +1,36 @@
+.wrapper__element-example ol li {
+    list-style: decimal inside;
+}
+
+.power-table, .power-table tr td {
+    border: none;
+    vertical-align: bottom;
+}
+
+.power-table tr td.left {
+    text-align: left;
+}
+
+.power-table tr td.right {
+    text-align: right;
+}
+
+.power-frac {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.power-frac span {
+    text-align: center;
+}
+
+.power-frac__num {
+    padding-top: 0.5em;
+}
+
+.power-frac__fracbar {
+    border: 1px solid;
+    width: 100%;
+}

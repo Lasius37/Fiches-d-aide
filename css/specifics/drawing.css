@@ -1,0 +1,16 @@
+.drawing__table tr td {
+    border: none;
+}
+
+.label[data-part="abdomen"] {top: 14.75%; left: 63.5%; transform: translate(0, -50%);}
+.label[data-part="petiole"] {top: 22.25%; left: 63.5%; transform: translate(0, -50%);}
+.label[data-part="thorax"] {top: 29.25%; left: 63.5%; transform: translate(0, -50%);}
+.label[data-part="eye"] {top: 36.5%; left: 63.5%; transform: translate(0, -50%);}
+.label[data-part="antenna"] {top: 43.5%; left: 63.5%; transform: translate(0, -50%);}
+.label[data-part="mandibula"] {top: 51%; left: 63.5%; transform: translate(0, -50%);}
+.label[data-part="feet"] {top: 58%; left: 63.5%; transform: translate(0, -50%);}
+.label[data-part="head"] {top: 43.75%; left: 87.5%; writing-mode: vertical-rl; text-orientation: mixed; transform: translate(0, -50%);}
+.label[data-part="title"] {top: 83%; left: 20%}
+.label[data-part="name"] {top: 83%; left: 65%}
+
+/* 63.5

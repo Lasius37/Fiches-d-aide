@@ -1,0 +1,61 @@
+.wrapper__element-example ol li {
+    list-style: decimal inside;
+}
+
+.wrapper__sub {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.percent-operation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.percent-frac {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.percent-frac__fracbar {
+    border: 1px solid;
+    width: 100%;
+}
+
+.percent__first-cell {
+    border-top: none;
+    border-left: none;
+}
+
+span.unknown-char {
+    font-size: var(--std-size);
+}
+
+.percent__table {
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    color: var(--blue);
+}
+
+.label i {
+    font-size: var(--title-size);
+    padding: 0;
+    transform: translate(-50%, -50%);
+}
+
+.label[data-part="first"] {top: 66%; left: 82.75%;}
+.label[data-part="second"] {top: 66%; left: 83.5%;}
+
+.modal__steps .percent__cross i:hover, .modal__steps .percent__cross i:active {
+    background-color: transparent;
+    color: var(--blue);
+}

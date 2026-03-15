@@ -1,0 +1,12 @@
+.label[data-part="ants"] {bottom: 85%; left: 3%}
+.label[data-part="time"] {bottom: 18%; right: 0%}
+.label[data-part="0"] {top: 86%; right: 97%}
+.label[data-part="y20"] {top: 64%; right: 97%}
+.label[data-part="y40"] {top: 49.5%; right: 97%}
+.label[data-part="y60"] {top: 35.5%; right: 97%}
+.label[data-part="y80"] {top: 21%; right: 97%}
+.label[data-part="x5"] {top: 86%; left: 19%}
+.label[data-part="x10"] {top: 86%; left: 32.5%}
+.label[data-part="x15"] {top: 86%; left: 47%}
+.label[data-part="x20"] {top: 86%; left: 60.5%}
+.label[data-part="x25"] {top: 86%; left: 75%}

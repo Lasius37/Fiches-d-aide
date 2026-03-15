@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Conversions</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/conversions.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Réaliser des conversions</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-units">Identifier les données</a></li>
+                            <li><a class="btn step-btn" href="#modal-table">Utiliser le tableau de conversion</a></li>
+                            <li><a class="btn step-btn" href="#modal-criticism">Vérifier le résultat</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple de donnée -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de donnée</h2>
+                <div>
+                    <p>Une fourmi a parcouru 34,5 cm en 10 secondes.</p>
+                </div>
+            </article>
+
+            <!-- Exemple de consigne -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <ol>
+                        <li>Convertir cette distance en mm.</li>
+                        <li>Convertir cette distance en m.</li>
+                    </ol>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de conversion</h2>
+                <div>
+                    <h3 class="script script__title">Question 1 :</h3>
+                    <table class="conversion__table script script__pencil">
+                        <tr>
+                            <td>km</td>
+                            <td>hm</td>
+                            <td>dam</td>
+                            <td>m</td>
+                            <td>dm</td>
+                            <td>cm</td>
+                            <td>mm</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                    </table>               
+                    <p class="script script__pen">La fourmi a parcouru 345 mm.</p>
+                </div>
+            </article>
+
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de conversion</h2>
+                <div>
+                    <h3 class="script script__title">Question 2 :</h3>
+                    <table class="conversion__table script script__pencil">
+                        <tr>
+                            <td>km</td>
+                            <td>hm</td>
+                            <td>dam</td>
+                            <td>m</td>
+                            <td>dm</td>
+                            <td>cm</td>
+                            <td>mm</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                    </table>
+                    <p class="script script__pen">La fourmi a parcouru 0,345 m.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-units">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Identifier les données</h2>
+            <ul class="modal__list">
+                <li>Type de grandeur concernée (masse, longueur, volume…).</li>
+                <li>Repérer l'unité de départ.</li>
+                <li>Repérer l'unité d'arrivée.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-table">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Utiliser le tableau de conversion</h2>
+            <table class="conversion__table">
+                <tr>
+                    <td>k…</td>
+                    <td>h…</td>
+                    <td>da…</td>
+                    <td>…</td>
+                    <td>d…</td>
+                    <td>c…</td>
+                    <td>m…</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <ul class="modal__list">
+                <li>Unité principale.</li>
+                <li>Chiffre des unités → colonne de l'unité de départ.</li>
+                <li>Ajout de "0" si besoin, avant ou après.</li>
+                <li>Virgule → à droite du chiffre de l'unité d'arrivée.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-criticism">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Critique du résultat</h2>
+            <ul class="modal__list">
+                <li>Pas de "0" inutiles.</li>
+                <li>Réalisme du résultat.</li>
+                <li>Phrase réponse.</li>
+            </ul>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai bien réalisé mes conversions si…</h2>
+            <ul class="modal__list">
+                <li>J'ai identifié correctement les unités de départ et d'arrivée.</li>
+                <li>J'ai utilisé le tableau de conversion dans le bon sens.</li>
+                <li>J'ai placé correctement la virgule, j'ai enlevé les "0" inutiles.</li>
+                <li>J'ai noté le résultat avec la bonne unité.</li>
+                <li>J'ai obtenu un résultat réaliste.</li>
+                <li>Je peux expliquer ma démarche sans calculatrice.</li>
+            </ul>
+        </section>
+    </aside>
+
+</body>
+</html>

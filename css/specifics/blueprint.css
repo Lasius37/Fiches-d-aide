@@ -1,0 +1,7 @@
+.label[data-part="water"] {bottom: 75%; right: 90%;}
+.label[data-part="cotton"] {bottom: 81%; right: 70%;}
+.label[data-part="anti-escape"] {bottom: 81%; left: 42%;}
+.label[data-part="food"] {top: 77%; right: 15%;}
+.label[data-part="worker"] {top: 82%; left: 50%;}
+.label[data-part="queen"] {top: 82%; right: 68%;}
+.label[data-part="eggs"] {top: 70%; right: 82%;}

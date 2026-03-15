@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Recherche</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/search_infos.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER
+    **************************************************************************************************************** -->
+    <header>
+        <a class="menu-icon" href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path fill="currentColor" d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                <path fill="currentColor" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+            </svg>
+        </a>
+        <h1>Faire une recherche sur Internet</h1>
+    </header>
+
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <a href="#modal-equipment" class="btn equipment-btn">Matériel</a>
+
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-question">Formuler une bonne requête</a></li>
+                            <li><a class="btn step-btn" href="#modal-infos">Choisir des sources fiables</a></li>
+                            <li><a class="btn step-btn" href="#modal-bad">Repérer les sources peu fiables</a></li>
+                            <li><a class="btn step-btn" href="#modal-training">Prendre des notes utiles</a></li>
+                        </ol>
+                    </nav>
+
+                    <a href="#modal-autoeval" class="btn autoeval-btn">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <p>Présenter à l’oral l’organisation d’une colonie de fourmis (durée : 2&nbsp;min&nbsp;30 à 3&nbsp;min&nbsp;30).</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Exemple de recherche</h2>
+                <div>
+                    <img src="../images/search_infos.png" alt="">
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale étape -->
+        <section class="modal modal__equipment" id="modal-equipment">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Matériel</h2>
+            <ul class="modal__list">
+                <li>Moteur de recherche.</li>
+                <li>Brouillon (papier ou fichier).</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-question">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Formuler une bonne requête</h2>
+            <ul class="modal__list">
+                <li>Mots importants de la question.</li>
+                <li>Termes scientifiques précis.</li>
+                <li>Pas de phrases longues.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-infos">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Choisir des sources fiables</h2>
+            <ul class="modal__list">
+                <li>Sites scientifiques.</li>
+                <li>Sites éducatifs.</li>
+                <li>Sites officiels.</li>
+                <li>Sources documentées.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-bad">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Repérer les sources peu fiables</h2>
+            <ul class="modal__list">
+                <li><span class="warning">⚠ </span>Forums.</li>
+                <li><span class="warning">⚠ </span>Réseaux sociaux.</li>
+                <li><span class="warning">⚠ </span>Blogs.</li>
+                <li><span class="warning">⚠ </span>Sources non documentées.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-training">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Prendre des notes utiles</h2>
+            <ul class="modal__list">
+                <li>Idées importantes seulement.</li>
+                <li>Mots-clés utiles.</li>
+                <li>Références (lien, site, auteur, date).</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai fait une recherche de bonne qualité si…</h2>
+            <ul class="modal__list">
+                <li>J'ai choisi des mots-clés pour faire ma recherche.</li>
+                <li>J'ai utilisé des sources fiables.</li>
+                <li>J'ai noté les informations utiles.</li>
+                <li>Je peux citer mes sources.</li>
+                <li>Je peux expliquer comment j'ai trouvé l'information.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

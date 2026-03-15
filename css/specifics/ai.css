@@ -1,0 +1,6 @@
+td.ia {
+    background-color: var(--darkgrey);
+    color: var(--white);
+    font-family: var(--ia-font);
+    font-size: var(--std-size);
+}

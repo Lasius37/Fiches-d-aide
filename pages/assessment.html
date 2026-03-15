@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Évaluation</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/assessment.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER: retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Réviser pour une évaluation</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <ol class="step-btns">
+                        <li class="btn step-btn"><a href="#modal-memorize">Faire le point (jour 1-2)</a></li>
+                        <li class="btn step-btn"><a href="#modal-training">Réviser activement (jour 3-4)</a></li>
+                        <li class="btn step-btn"><a href="#modal-self-assess">Remobiliser ses connaissances (jour 5-6)</a></li>
+                    </ol>
+
+                    <a href="#modal-autoeval" class="btn autoeval-btn">Autoévaluation</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+
+            <!-- Exemple de consigne -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <p>Préparer l'évaluation sur le chapitre "La vie sociale chez les fourmis".</p>
+                </div>
+            </article>
+
+            <!-- Exemple : fiche de révision -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de fiche de révision</h2>
+                <div>
+                    <table>
+                        <caption>Révision - La vie sociale des fourmis</caption>
+                        <thead>
+                            <tr>
+                                <th>Compétences évaluées</th>
+                                <th>Connaissances évaluées<br>(à savoir)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>S1 - Extraire et organiser des informations.</li>
+                                        <li>T1 - Mobiliser ses connaissances.</li>
+                                        <li>S5 - Expliquer des phénomènes (environnement).</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Les définitions de : caste - colonie - phéromone - trophallaxie.</li>
+                                        <li>L'organisation d'une colonie.</li>
+                                        <li>Les castes.</li>
+                                        <li>La communication dans la colonie.</li>
+                                        <li>Coopération et division du travail.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside>
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-memorize">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Faire le point (jour 1-2)</h2>
+            <ul class="modal__list">
+                <li>Si possible, se tester sur Éléa sans réviser.</li>
+                <li>Repérer les éléments à connaître (titres, bilans, mots-clés, définitions, schémas).</li>
+                <li>Faire des fiches (une demi-feuille devrait suffire).</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-training">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Réviser activement (jour 3-4)</h2>
+            <ul class="modal__list">
+                <li>Réapprendre les leçons.</li>
+                <li>Refaire les activités.</li>
+                <li>Si possible, se tester sur Éléa.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-self-assess">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Remobiliser ses connaissances (jour 5-6)</h2>
+            <ul class="modal__list">
+                <li>Relire une dernière fois les fiches.</li>
+                <li>Si possible, se tester une dernière fois sur Éléa.</li>
+            </ul>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : je suis prêt(e) pour l'évaluation si…</h2>
+            <ul class="modal__list">
+                <li>Je connais les mots-clés et les définitions sans hésitation.</li>
+                <li>Je peux expliquer les mots-clés avec mes mots.</li>
+                <li>Je sais répondre à des questions courtes.</li>
+                <li>Je sais expliquer avec mes mots le contenu des leçons.</li>
+                <li>Je sais refaire les activités du cours.</li>
+                <li>Mon score sur Éléa est élevé (idéalement, plus de 80 sur 100).</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.label[data-part="gland"] {bottom: 66%; right: 82%;}
+.label[data-part="ant1"] {top: 48%; left: 7%;}
+.label[data-part="antenna"] {bottom: 74%; left: 67%;}
+.label[data-part="brain"] {bottom: 86%; left: 82%;}
+.label[data-part="ant2"] {top: 48%; left: 82%;}
+.label[data-part="ground"] {top: 73%; right: 8%;}
+.label[data-part="pheromons"] {top: 85%; right: 75%; color: var(--yellow)}
+.label[data-part="track"] {top: 84%; left: 45%; color: var(--yellow); transform: translate(-50%, 0);}
+.label[data-part="detection"] {bottom: 45%; right:47%; color: var(--purple)}
+.label[data-part="message"] {bottom: 65%; right: 38%; color: var(--purple)}

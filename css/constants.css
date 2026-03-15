@@ -1,0 +1,51 @@
+@font-face {
+    font-family: EcritureA-Romain;
+    src: url(../fonts/EcritureA-Romain.otf) format("opentype");
+}
+
+:root {
+    /*********************************** COLORS *******************************/
+    --white: rgb(255, 255, 255);
+    --grey: rgb(128, 128, 128);
+    --darkgrey: rgb(89, 89, 89);
+    --light-grey: rgb(200, 200, 200);
+    --black: rgb(0, 0, 0);
+    --red: rgb(255, 0, 0);
+    --pink: rgb(255, 51, 153);
+    --light-pink: rgb(255, 230, 242);
+    --blue: rgb(0, 102, 204);
+    --light-blue: rgb(204, 238, 255);
+    --dark-blue: rgb(0, 51, 128);
+    --green: rgb(76, 153, 0);
+    --light-green: rgb(218, 247, 187);
+    --orange: rgb(255, 128, 0);
+    --light-orange: rgb(255, 255, 204);
+    --purple: rgb(112, 48, 160);
+    --yellow: rgb(255, 210, 0);
+    --brown: rgb(128, 96, 0);
+
+    --white-tr: rgba(255, 255, 255, 0.6);
+    --black-tr: rgba(0, 0, 0, 0.6);
+
+    --shadow: 0 0 0.5em var(--grey);
+
+    /*********************************** FONTS *******************************/
+    --std-font: Verdana, sans-serif;
+    --title-font: Verdana, sans-serif;
+    --script-font: "EcritureA-Romain", cursive;
+    --ia-font: "Segoe UI", sans-serif;
+
+    /*********************************** SIZES *******************************/
+    --icon-size: 2.5em;
+    --border-radius: 0.5em;
+
+    /*********************************** DISPOSITION *******************************/
+    --title-margin: 1em 0 2em 0;
+
+    /*********************************** TEXT *******************************/
+    --std-size: 18px;
+    --title-size: calc(var(--std-size) * 2);
+    --script-size: calc(var(--std-size) * 1.5);
+    --line-height: 1.5rem;
+    --char-list: "⇨ ";
+}

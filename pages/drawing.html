@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Dessin d'observation</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/specifics/drawing.css">
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER : retour + titre
+    **************************************************************************************************************** -->
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <h1>Réaliser un dessin d'observation</h1>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         MAIN : sections du contenu
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- Section Comment faire : Exemple de consigne, Matériel, Étapes, Autoévaluation -->
+        <section class="wrapper">
+
+            <!-- Méthode -->
+            <article class="wrapper__element wrapper__element-method">
+                <h2>Méthode à suivre</h2>
+                <div>
+                    <a href="#modal-equipment" class="btn equipment-btn" id="equipment-btn">Matériel</a>
+
+                    <nav>
+                        <ol class="step-btns">
+                            <li><a class="btn step-btn" href="#modal-presentation">Préparer la feuille</a></li>
+                            <li><a class="btn step-btn" href="#modal-observation">Observer avec attention</a></li>
+                            <li><a class="btn step-btn" href="#modal-drawing">Représenter</a></li>
+                            <li><a class="btn step-btn" href="#modal-lines">Tracer des traits adaptés</a></li>
+                            <li><a class="btn step-btn" href="#modal-caption">Légender</a></li>
+                            <li><a class="btn step-btn" href="#modal-title">Ajouter un titre</a></li>
+                        </ol>
+                    </nav>
+
+                    <a class="btn autoeval-btn" href="#modal-autoeval">Autoévaluation</a>
+                </div>
+            </article>
+
+            <!-- Exemple de consigne -->
+            <article class="wrapper__element wrapper__element-example">
+                <h2>Exemple de consigne</h2>
+                <div>
+                    <p>Réaliser le dessin d'observation d'une fourmi.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Réponse : Exemple de réponse -->
+        <section class="wrapper">
+
+            <!-- Exemple -->
+            <article class="wrapper__element wrapper__example">
+                <h2>Exemple de dessin d'observation</h2>
+                <div>
+                    <figure class="prod-image">
+                        <img src="../images/draw.png" loading="lazy" alt="">
+                        <figcaption class="labels script script__pencil">
+                            <span class="label" data-part="abdomen">abdomen</span>
+                            <span class="label" data-part="petiole">pétiole</span>
+                            <span class="label" data-part="thorax">thorax</span>
+                            <span class="label" data-part="eye">œil</span>
+                            <span class="label" data-part="antenna">antenne</span>
+                            <span class="label" data-part="mandibula">mandibule</span>
+                            <span class="label" data-part="feet">pattes (6)</span>
+                            <span class="label" data-part="head">tête</span>
+                            <span class="label" data-part="title">Une fourmi vue au<br>microscope (× 40)</span>
+                            <span class="label" data-part="name">NOM Prénom<br>Classe</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         ASIDE : modales (CSS :target)
+    **************************************************************************************************************** -->
+    <aside class="modals">
+
+        <!-- Fond noirci : fermeture -->
+        <a href="#top" class="backdrop" aria-label="Fermer"></a>
+
+        <!-- Modale matériel -->
+        <section class="modal modal__equipment" id="modal-equipment">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Matériel</h2>
+            <ul class="modal__list">
+                <li>Feuille de dessin blanche.</li>
+                <li>Crayon à papier.</li>
+                <li>Gomme, taille-crayon, règle.</li>
+                <li>Pas de couleurs, ni de stylo.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-presentation">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Préparer la feuille</h2>
+            <ul class="modal__list">
+                <li>Marges discrètes, droites.</li>
+                <li>Taille des cases adaptée.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-observation">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Observer avec attention</h2>
+            <ul class="modal__list">
+                <li>Prendre le temps d'observer :
+                    <ul class="modal__sub-list">
+                        <li>Les formes (taille, proportions).</li>
+                        <li>Les différents éléments.</li>
+                        <li>La disposition des éléments.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-drawing">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Dessiner</h2>
+            <ul class="modal__list">
+                <li>Centré, taille adaptée.</li>
+                <li>Formes et proportions respectées.</li>
+                <li>Ressemblant à la réalité.</li>
+                <li>Possibilité de griser légèrement.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-lines">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Tracer les traits</h2>
+            <ul class="modal__list">
+                <li class="modal__draw">Fins.
+                    <table class="drawing__table">
+                        <tr>
+                            <td class="warning">✘</td>
+                            <td><img src="../images/thick.svg" loading="lazy" alt="trait épais"></td>
+                            <td></td>
+                            <td class="ok">✔</td>
+                            <td><img src="../images/thin.svg" loading="lazy" alt="trait fin"></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="modal__draw">Nets.
+                    <table class="drawing__table">
+                        <tr>
+                            <td class="warning">✘</td>
+                            <td><img src="../images/unclear.svg" loading="lazy" alt="trait pas net"></td>
+                            <td></td>
+                            <td class="ok">✔</td>
+                            <td><img src="../images/clear.svg" loading="lazy" alt="trait net"></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="modal__draw">Continus.
+                    <table class="drawing__table">
+                        <tr>
+                            <td class="warning">✘</td>
+                            <td><img src="../images/fragmented.svg" loading="lazy" alt="trait épais"></td>
+                            <td></td>
+                            <td class="ok">✔</td>
+                            <td><img src="../images/unbroken.svg" loading="lazy" alt="trait fin"></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-caption">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Légender</h2>
+            <ul class="modal__list">
+                <li>Traits horizontaux, non croisés.</li>
+                <li>Vocabulaire précis.</li>
+            </ul>
+        </section>
+
+        <!-- Modale étape -->
+        <section class="modal modal__steps" id="modal-title">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Ajouter un titre</h2>
+            <ul class="modal__list">
+                <li>Sujet du dessin.</li>
+                <li>Grossissement.</li>
+            </ul>
+        </section>
+
+        <!-- Modale autoévaluation -->
+        <section class="modal modal__autoeval" id="modal-autoeval">
+            <a href="#top" class="modal__close" aria-label="Fermer">
+                <i class="bi bi-x-lg"></i>
+            </a>
+            <h2>Autoévaluation : j'ai bien réalisé mon dessin d'observation si…</h2>
+            <ul class="modal__list">
+                <li>J'ai réalisé un travail soigné, tout au crayon, avec des marges bien tracées.</li>
+                <li>J'ai réalisé un dessin grand et centré.</li>
+                <li>J'ai représenté fidèlement la réalité, avec des détails.</li>
+                <li>J'ai dessiné avec des traits sont nets, fins et continus.</li>
+                <li>J'ai tracé des traits de légende horizontaux, qui ne se croisent pas.</li>
+                <li>J'ai légendé et titré mon dessin avec précision.</li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

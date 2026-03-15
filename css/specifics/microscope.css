@@ -1,0 +1,68 @@
+.label__microscope {
+    color: var(--green);
+}
+
+.view-icon {
+    position: absolute;
+    top: 0;
+    left: 65%;
+    color: var(--orange);
+    font-size: 2rem;
+    border: 2px solid var(--orange);
+    border-radius: 50%;
+    padding: 0.2rem;
+    background-color: var(--white);
+}
+
+.view-icon:hover {
+    background-color: var(--light-orange);
+}
+
+.view-icon:active {
+    background-color: var(--orange);
+    color: var(--light-orange);
+}
+
+.microscope__result h2 {
+    color: var(--orange);
+}
+
+.microscope__result a {
+    color: var(--orange);
+}
+
+.microscope__result a:hover, .microscope__result a:hover i {
+    background-color: var(--light-orange);
+}
+
+.microscope__result a:active, .microscope__result a:active i {
+    background-color: var(--orange);
+    color: var(--light-orange);
+}
+
+.microscope__zoom div div {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 70px;
+}
+
+.microscope__zoom p {
+    text-align: center;
+}
+
+.microscope__zoom img {
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+.label[data-part="pointer"] {top: 75%; left: 43%;}
+.label[data-part="eyepiece"] {bottom: 95%; right: 52%}
+.label[data-part="head"] {bottom: 78.5%; right: 69.5%}
+.label[data-part="lens"] {bottom: 59.5%; right: 73.5%}
+.label[data-part="stem"] {bottom: 71%; left: 70.5%}
+.label[data-part="board"] {top: 50.5%; right: 76.5%}
+.label[data-part="diaphragm"] {top: 66%; right: 74%}
+.label[data-part="wheels"] {bottom: 40%; left: 75%}
+.label[data-part="switch"] {bottom: 15%; left: 77%}
+.label[data-part="dimmer"] {bottom: 4%; left: 74%}
