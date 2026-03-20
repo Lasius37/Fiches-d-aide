@@ -40,10 +40,12 @@
     }
 }
 
-    @media (max-width: 720px) {
-        :root {
-            --std-size: 14px;
-        }
-
-
+@media (max-width: 720px) {
+    :root {
+        --std-size: 14px;
     }
+
+    #search #problems {
+        font-size: 0.8em;
+    }
+}
