@@ -19,11 +19,8 @@ html {
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     padding-bottom: 1rem;
-}
-
-body {
     display: flex;
     flex-direction: column;
     background:
@@ -149,7 +146,7 @@ main h2 {
 }
 
 .wrapper__element > div {
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .wrapper__element-method > div {
@@ -191,7 +188,7 @@ table caption {
 table td, table th {
     border: 2px solid;
     padding: 0.2rem 0.5rem;
-    min-width: 2em;
+    min-width: 1.5em;
 }
 
 table td, table td * {
