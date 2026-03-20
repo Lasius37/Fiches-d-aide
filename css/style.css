@@ -13,6 +13,11 @@ html, body, ul, ol, h1, h2, h3, h4, h5, h6, p, li, div, main, aside, section, he
     box-sizing: border-box;
 }
 
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
 body {
     height: 100vh;
     padding-bottom: 1rem;
