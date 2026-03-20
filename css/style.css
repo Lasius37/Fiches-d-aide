@@ -391,6 +391,10 @@ aside .backdrop {
     z-index: 1;
 }
 
+.modal:target {
+    display: block;
+}
+
 .modal h2 {
     border-bottom: 2px solid;
     padding-bottom: 0.5em;
@@ -408,10 +412,6 @@ aside .backdrop {
     right: 0;
     font-size: 1.5rem;
     padding: 0.2rem;
-}
-
-.modal:target {
-    display: block;
 }
 
 .modal__equipment h2, .modal__equipment i {
