@@ -49,4 +49,8 @@
     #search #problems {
         font-size: 0.8em;
     }
+
+    .instructions .verbs a {
+        width: 8rem;
+    }
 }
