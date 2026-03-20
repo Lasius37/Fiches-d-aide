@@ -39,6 +39,10 @@
         margin: 2em 0;
         display: block;
     }
+
+    .instructions .verbs a {
+        width: 8rem;
+    }
 }
 
 @media (max-width: 720px) {
@@ -48,9 +52,5 @@
 
     #search #problems {
         font-size: 0.8em;
-    }
-
-    .instructions .verbs a {
-        width: 8rem;
     }
 }
