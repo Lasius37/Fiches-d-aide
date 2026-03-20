@@ -37,6 +37,7 @@
 
     main .wrapper {
         margin: 2em 0;
+        display: block;
     }
 }
 
