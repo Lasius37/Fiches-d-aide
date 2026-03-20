@@ -1,48 +1,47 @@
 @media (max-width: 1024px) {
     :root {
-        --script-size: 24px;
+        --icon-size: 2em;
     }
-}
 
-@media (max-width: 900px) {
-    :root {
-        --script-size: 28px;
+    body > header a {
+        left: 2vw;
+    }
+
+    body > header h1 {
+        margin: 0 1.2em;
     }
 
     main {
         display: block;
-        flex: initial;
-        margin: 0 1em;
+        height: initial;
+        margin: 0 2vw;
     }
 
-    .menu-icon {
-        width: 20px;
-        height: 20px;
+    .index-header {
+        background-color: var(--pink);
     }
 
-    .instructions, .productions {
-        width: 100%;
-        height: auto;
-        gap: 1.5em;
+    #index-main {
+        margin-bottom: 2em;
+        height: fit-content;
     }
 
-    .columns {
+    #search{
         display: block;
     }
 
-    #tools {
-        width: 100%;
-        border: none;
+    #search div {
+        width: fit-content;
+        margin: 1em auto;
     }
 
-    .mindmap-caption-title {
-        border-width: 1px;
+    main .wrapper {
+        margin: 2em 0;
     }
 }
 
-
 @media (max-width: 640px) {
     :root {
-        --script-size: 14px;
+        --std-size: 14px;
     }
 }

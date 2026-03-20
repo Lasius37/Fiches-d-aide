@@ -45,7 +45,7 @@
     /*********************************** TEXT *******************************/
     --std-size: 18px;
     --title-size: calc(var(--std-size) * 2);
-    --script-size: calc(var(--std-size) * 1.5);
-    --line-height: 1.5rem;
+    --script-size: calc(var(--std-size) * 1.7);
+    --line-height: 1.5em;
     --char-list: "⇨ ";
 }
