@@ -45,3 +45,13 @@
         --std-size: 14px;
     }
 }
+
+@media (max-width: 1024px) {
+    :root {
+        --std-size: 32px;
+    }
+
+    #search #problems {
+        font-size: 0.8em;
+    }
+}
