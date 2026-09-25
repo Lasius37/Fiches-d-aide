@@ -22,16 +22,6 @@
         background-color: var(--pink);
     }
 
-    #search{
-        flex-direction: column;
-        gap: 0;
-    }
-
-    #search > div {
-        width: fit-content;
-        margin: 1em auto;
-    }
-
     main .wrapper {
         margin: 1rem 0;
         flex-direction: column;
