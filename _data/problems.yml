@@ -1,0 +1,173 @@
+- category: Compréhension
+  problems: 
+    - title: Je ne comprends pas une consigne
+      tags: 
+        - instructions
+        
+    - title: Je ne sais pas ce que je dois faire
+      tags: 
+        - instructions
+      
+    - title: Je ne comprends pas le document
+      tags:
+        - document
+        - map
+        - read_graph
+        - timeline
+
+- category: Méthode
+  problems: 
+    - title: Je ne sais pas comment ranger mon classeur
+      tags:
+        - binder
+               
+    - title: Je n'arrive pas à apprendre ma leçon
+      tags:
+        - lesson
+             
+    - title: Je n'arrive pas à faire un exercice
+      tags:
+        - homework
+        - instructions
+             
+    - title: Je n'arrive pas à réviser pour préparer une évaluation
+      tags:
+        - assessment
+             
+    - title: Je ne sais pas comment organiser ma réponse
+      tags:
+        - structured_answer
+             
+    - title: Je n'arrive pas à rédiger
+      tags:
+        - structured_answer
+
+- category: Manipulation et microscope
+  problems: 
+    - title: Je ne connais pas les consignes de sécurité
+      tags:
+        - security
+               
+    - title: Je ne sais pas utiliser un microscope
+      tags:
+        - microscope
+             
+    - title: Je ne sais pas calculer un grossissement
+      tags:
+        - microscope
+
+- category: Production d'un document
+  problems: 
+    - title: Je ne sais pas faire un graphique
+      tags:
+        - draw_graph
+               
+    - title: Je ne sais pas quel axe choisir
+      tags:
+        - draw_graph
+             
+    - title: Je ne sais pas choisir une échelle
+      tags:
+        - draw_graph
+             
+    - title: Je ne sais pas faire un dessin d'observation
+      tags:
+        - drawing
+             
+    - title: Je ne sais pas faire un schéma
+      tags:
+        - diagram
+             
+    - title: Je ne sais pas faire un schéma fonctionnel
+      tags:
+        - f_diagram
+             
+    - title: Je ne sais pas faire un tableau
+      tags:
+        - table
+             
+    - title: Je ne sais pas faire une carte mentale
+      tags:
+        - mindmap
+
+- category: Démarche scientifique
+  problems: 
+    - title: Je ne sais pas formuler une hypothèse
+      tags: 
+        - experimental
+               
+    - title: Je ne sais pas proposer une expérience
+      tags:
+      - experimental
+             
+    - title: Je ne sais pas identifier les paramètres
+      tags:
+      - experimental
+             
+    - title: Je ne sais pas interpréter des résultats
+      tags:
+      - experimental
+             
+    - title: Je ne sais pas conclure
+      tags:
+      - experimental
+    
+- category: Exposé
+  problems: 
+    - title: Je ne sais pas faire une recherche fiable
+      tags:
+        - search_infos
+               
+    - title: Je ne sais pas choisir une source
+      tags:
+        - search_infos
+             
+    - title: Je ne sais pas faire un diaporama
+      tags:
+        - diaporama
+             
+    - title: Je ne sais pas préparer un exposé oral
+      tags:
+        - presentation
+
+- category: Calculs
+  problems: 
+    - title: Je ne sais pas convertir
+      tags:
+        - conversions
+          
+    - title: Je ne sais pas placer la virgule
+      tags: 
+        - conversions
+             
+    - title: Je ne sais pas utiliser une formule mathématique
+      tags: 
+        - units
+             
+    - title: Je ne sais pas calculer un pourcentage
+      tags: 
+        - percent
+             
+    - title: Je ne sais pas utiliser un pourcentage
+      tags: 
+        - percent
+             
+    - title: Je ne sais pas utiliser les puissances de 10
+      tags: 
+        - power
+
+- category: Intelligence Artificielle
+  problems: 
+    - title: Je ne sais pas utiliser l'IA
+      tags:
+        - ai
+    - title: Je ne sais pas rédiger un prompt
+      tags:
+        - prompt
+    - title: Je ne sais pas vérifier une réponse d'IA
+      tags:
+        - ai
+        - prompt
+
+
+

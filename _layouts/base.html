@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    {% include head.html %}
+</head>
+
+<body id="top">
+
+    <!-- ***************************************************************************************************************
+         HEADER
+    **************************************************************************************************************** -->
+    <header>
+        <a href="{{ '/index.html' | relative_url }}">
+            <i class="bi bi-house-fill"></i>
+        </a>
+
+        <h1>{{ page.title | escape }}</h1>
+    </header>
+
+    {{  content }}
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - server.bat
+  - README.md
